@@ -1,0 +1,12 @@
+[project]
+name = "awesome-ml-plasma-physics"
+version = "0.1.0"
+description = "Tools for managing awesome ML in plasma physics repository"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "bibtexparser>=2.0.0b7",
+]
+
+[project.scripts]
+add-papers = "add_papers_to_readme:main"

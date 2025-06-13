@@ -1,0 +1,2788 @@
+% Use the LaTeX commands listed below in your .tex file
+% \usepackage{amssymb}
+
+@ARTICLE{Kim2024-kk,
+  title         = "Design optimization of nuclear fusion reactor through Deep
+                   Reinforcement Learning",
+  author        = "Kim, Jinsu and Seo, Jaemin",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "This research explores the application of Deep Reinforcement
+                   Learning (DRL) to optimize the design of a nuclear fusion
+                   reactor. DRL can efficiently address the challenging issues
+                   attributed to multiple physics and engineering constraints
+                   for steady-state operation. The fusion reactor design
+                   computation and the optimization code applicable to
+                   parallelization with DRL are developed. The proposed
+                   framework enables finding the optimal reactor design that
+                   satisfies the operational requirements while reducing
+                   building costs. Multi-objective design optimization for a
+                   fusion reactor is now simplified by DRL, indicating the high
+                   potential of the proposed framework for advancing the
+                   efficient and sustainable design of future reactors.",
+  month         =  "12~" # sep,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2409.08231",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2409.08231",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Zhao2022-zn,
+  title     = "Building database of {2D} {UEDGE} simulations for the development
+               of a surrogate model of divertor detachment control",
+  author    = "Zhao, Menglong and Rognlien, Thomas and Zhu, Ben and Meyer,
+               William and Xu, Xueqiao and Bhatia, Harsh and Li, Nami and
+               Bremer, Peer-Timo",
+  journal   = "APS Division of Plasma Physics Meeting Abstracts",
+  publisher = "ui.adsabs.harvard.edu",
+  volume    =  2022,
+  pages     = "UP11.057",
+  abstract  = "A large set of 2D UEDGE simulations with currents and cross-field
+               drifts based on a generic medium-size tokamak geometry are
+               obtained for the development of machine learning surrogate models
+               for detachment control. For the current 2D data set, three
+               control parameters are varied: gas puff rate, power input and
+               impurity fraction. In addition, the values of the perpendicular
+               anomalous transport coefficients are scanned because they are the
+               most important uncertainty input of UEDGE or other 2D transport
+               codes. The range of the parameters covers the normal experimental
+               control range. A spatial constant concentration of impurities
+               (fixed-fraction) is assumed, and currents for solving electric
+               potential and cross-field drifts are included since they are
+               important in determining divertor plasma states. Compared to our
+               previous work of building a large data set of 1D UEDGE
+               simulations [1] that already captures the main SOL physics by
+               solving plasma parallel transport equations in a flux tube with
+               recycled atom neutrals, these 2D simulations have higher fidelity
+               by including cross-field drifts and the uncertainty of
+               perpendicular transport coefficients, which provides 2D plasma
+               states toward both inner and outer target plates. The data set
+               shows that for a certain power input and impurity fraction, the
+               target plate ion saturation current roll-over appears as the puff
+               rate increases, recovering the trend of experimental data.
+               However, the roll-over appears earlier (at a smaller upstream
+               density) than the results of our previous 1D simulations due to
+               higher radiation. A surrogate model is under development using
+               the 2D UEDGE simulations for detachment control [2]. Possible
+               extensions of including geometry effects: varying divertor leg
+               lengths and divertor target tilt angles, will also be discussed.
+               Work supported by US DOE under DE-AC52-07NA27344 at LLNL.",
+  year      =  2022,
+  url       = "https://ui.adsabs.harvard.edu/abs/2022APS..DPPUP1057Z/abstract",
+  keywords  = "plasma-physics-ml",
+  issn      = "0803-5326",
+  language  = "en"
+}
+
+@ARTICLE{Zhao2024-da,
+  title    = "Extended database of {2D} {UEDGE} simulations for {KSTAR}
+              detachment control with variations of plasma currents",
+  author   = "Zhao, Menglong and Zhu, Ben and Rognlien, Tom and Xu, Xueqiao and
+              Meyer, William and Li, Nami and Ma, Xinxing and Kwon, Kyubeen and
+              Eldon, David and Lee, Hyungho and Hwang, Junghoo",
+  journal  = "Acta paediatrica (Oslo, Norway: 1992). Supplement",
+  volume   =  2024,
+  pages    = "CM11.012",
+  abstract = "In this work, we extend the database of 50,000 2D UEDGE
+              simulations [1] for Machine Learning surrogate models [2] designed
+              for KSTAR detachment control. These simulations explore five
+              control parameters: core boundary (at PsiN = 0.85) plasma density,
+              SOL input power, carbon impurity fraction, perpendicular anomalous
+              transport coefficients and the plasma current. Specifically, core
+              boundary density ranges from to , and input power varies from 1 to
+              8 MW, covering the typical KSTAR operation regime. The simulations
+              assume a spatially constant concentration of carbon impurities
+              using a fixed-fraction model and include the plasma potential
+              equation and cross-field drifts with the Braginskii plasma and
+              neutral fluid model. The anomalous transport coefficient profiles
+              are varied based on fits to SOLPS-ITER simulated upstream and from
+              KSTAR discharge \#22849, providing flexibility for the surrogate
+              model considering real-time plasma transport uncertainty. The
+              database now includes plasma currents of 300 kA, 500 kA, 600 kA,
+              700 kA, and 800 kA. The data reveal that for specific power input,
+              impurity fraction and plasma current, the ion saturation current
+              at the target plates exhibits a roll-over phenomenon as upstream
+              collisionality increases, consistent with the experimental trend
+              for divertor-plasma detachment onset. Additionally, the heat flux
+              width on the outer target plate at a low collisionality (attached
+              plasma) aligns with the Eich's scaling [3]. The surrogate model
+              based on the database is being validated against SOLPS-ITER
+              simulations and KSTAR experimental data and will be presented in
+              [2]. Work supported by US DOE under DE-AC52-07NA27344 at LLNL.",
+  year     =  2024,
+  url      = "https://ui.adsabs.harvard.edu/abs/2024APS..DPPCM11012/abstract?",
+  keywords = "plasma-physics-ml",
+  issn     = "0803-5326",
+  language = "en"
+}
+
+@ARTICLE{Samuell2020-co,
+  title         = "Measuring the electron temperature and identifying plasma
+                   detachment using machine learning and spectroscopy",
+  author        = "Samuell, C M and Mclean, A G and Johnson, C A and Glass, F
+                   and Jaervinen, A E",
+  journal       = "arXiv [physics.plasm-ph]",
+  number        =  4,
+  pages         =  043520,
+  abstract      = "A machine learning approach has been implemented to measure
+                   the electron temperature directly from the emission spectra
+                   of a tokamak plasma. This approach utilized a neural network
+                   (NN) trained on a dataset of 1865 time slices from operation
+                   of the DIII-D tokamak using extreme ultraviolet / vacuum
+                   ultraviolet (EUV/VUV) emission spectroscopy matched with
+                   high-accuracy divertor Thomson scattering measurements of the
+                   electron temperature, $T_e$. This NN is shown to be
+                   particularly good at predicting $T_e$ at low temperatures
+                   ($T_e < 10$ eV) where the NN demonstrated a mean average
+                   error of less than 1 eV. Trained to detect plasma detachment
+                   in the tokamak divertor, a NN classifier was able to
+                   correctly identify detached states ($T_e<5$ eV) with a 99\%
+                   accuracy (F$_1$ score of 0.96) at an acquisition rate
+                   $10\times$ faster than the Thomson scattering measurement.
+                   The performance of the model is understood by examining a set
+                   of 4800 theoretical spectra generated using collisional
+                   radiative modeling that was also used to predict the
+                   performance of a low-cost spectrometer viewing nitrogen
+                   emission in the visible wavelengths. These results provide a
+                   proof-of-principle that low-cost spectrometers leveraged with
+                   machine learning can be used both to boost the performance of
+                   more expensive diagnostics on fusion devices, and be used
+                   independently as a fast and accurate $T_e$ measurement and
+                   detachment classifier.",
+  month         =  "21~" # oct,
+  year          =  2020,
+  url           = "https://pubs.aip.org/rsi/article/92/4/043520/964540/Measuring-the-electron-temperature-and-identifying",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2010.11244",
+  keywords      = "plasma-physics-ml",
+  doi           = "10.1063/5.0034552",
+  pmid          =  34243436
+}
+
+@ARTICLE{Zhu2022-zm,
+  title         = "Data-driven model for divertor plasma detachment prediction",
+  author        = "Zhu, Ben and Zhao, Menglong and Bhatia, Harsh and Xu,
+                   Xue-Qiao and Bremer, Peer-Timo and Meyer, William and Li,
+                   Nami and Rognlien, Thomas",
+  journal       = "arXiv [physics.plasm-ph]",
+  number        =  5,
+  pages         =  895880504,
+  abstract      = "We present a fast and accurate data-driven surrogate model
+                   for divertor plasma detachment prediction leveraging the
+                   latent feature space concept in machine learning research.
+                   Our approach involves constructing and training two neural
+                   networks. An autoencoder that finds a proper latent space
+                   representation (LSR) of plasma state by compressing the
+                   multi-modal diagnostic measurements, and a forward model
+                   using multi-layer perception (MLP) that projects a set of
+                   plasma control parameters to its corresponding LSR. By
+                   combining the forward model and the decoder network from
+                   autoencoder, this new data-driven surrogate model is able to
+                   predict a consistent set of diagnostic measurements based on
+                   a few plasma control parameters. In order to ensure that the
+                   crucial detachment physics is correctly captured, highly
+                   efficient 1D UEDGE model is used to generate training and
+                   validation data in this study. Benchmark between the
+                   data-driven surrogate model and UEDGE simulations shows that
+                   our surrogate model is capable to provide accurate detachment
+                   prediction (usually within a few percent relative error
+                   margin) but with at least four orders of magnitude speed-up,
+                   indicating that performance-wise, it has the potential to
+                   facilitate integrated tokamak design and plasma control.
+                   Comparing to the widely used two-point model and/or two-point
+                   model formatting, the new data-driven model features
+                   additional detachment front prediction and can be easily
+                   extended to incorporate richer physics. This study
+                   demonstrates that the complicated divertor and
+                   scrape-off-layer plasma state has a low-dimensional
+                   representation in latent space. Understanding plasma dynamics
+                   in latent space and utilizing this knowledge could open a new
+                   path for plasma control in magnetic fusion energy research.",
+  month         =  "20~" # jun,
+  year          =  2022,
+  url           = "https://www.cambridge.org/core/product/identifier/S002237782200085X/type/journal_article",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2206.09964",
+  keywords      = "plasma-physics-ml",
+  doi           = "10.1017/S002237782200085X"
+}
+
+@ARTICLE{Neiser2023-fm,
+  title    = "Multi-fidelity neural network representation of gyrokinetic
+              turbulence",
+  author   = "Neiser, Tom and Meneghini, Orso and Smith, Sterling and
+              McClenaghan, Joseph and Slendebroek, Tim and Orozco, David and
+              Sammuli, Brian and Staebler, Gary and Hall, Joseph and Belli,
+              Emily and Candy, Jeff",
+  journal  = "Acta paediatrica (Oslo, Norway: 1992). Supplement",
+  volume   =  2023,
+  pages    = "PP11.039",
+  abstract = "This presentation will introduce a multi-fidelity neural network
+              model of gyrokinetic turbulence GKNN-0, which has been trained and
+              validated against a database of 5 million TGLF simulations and
+              5000 linear CGYRO simulations with experimental input parameters
+              from the DIII-D tokamak. The first half of the presentation will
+              review the TGLF saturation rules-SAT0, SAT1, SAT2-and present a
+              big data approach to validating both the linear model of TGLF and
+              the saturation rules using experimental data from the DIII-D and
+              MAST-U",
+  year     =  2023,
+  url      = "https://ui.adsabs.harvard.edu/abs/2023APS..DPPPP1039N/abstract",
+  keywords = "plasma-physics-ml",
+  issn     = "0803-5326"
+}
+
+@ARTICLE{Choi2021-jz,
+  title    = "{N} {EURAL} {DATA} {COMPRESSION} {FOR} {PHYSICS} {PLASMA}
+              {SIMULATION}",
+  author   = "Choi, J and Gong, Qian and Pugmire, D and Klasky, S and Churchill,
+              M and Ku, S and Lee, Jaemoon and Rangarajan, Anand and Ranka, S",
+  year     =  2021,
+  keywords = "plasma-physics-ml"
+}
+
+@ARTICLE{Ho2021-mu,
+  title     = "Neural network surrogate of {QuaLiKiz} using {JET} experimental
+               data to populate training space",
+  author    = "Ho, A and Citrin, J and Bourdelle, C and Camenen, Y and Casson, F
+               J and van de Plassche, K L and Weisen, H and {JET Contributors}",
+  journal   = "Physics of plasmas",
+  publisher = "AIP Publishing",
+  volume    =  28,
+  number    =  3,
+  pages     =  032305,
+  abstract  = "Within integrated tokamak plasma modeling, turbulent transport
+               codes are typically the computational bottleneck limiting their
+               routine use outside of post-discharge analysis. Neural network
+               (NN) surrogates have been used to accelerate these calculations
+               while retaining the desired accuracy of the physics-based models.
+               This paper extends a previous NN model, known as QLKNN-hyper-10D,
+               by incorporating the impact of impurities, plasma rotation, and
+               magnetic equilibrium effects. This is achieved by adding a light
+               impurity fractional density (nimp,light/ne) and its normalized
+               gradient, the normalized pressure gradient ($\alpha$), the
+               toroidal Mach number (Mtor), and the normalized toroidal flow
+               velocity gradient. The input space was sampled based on
+               experimental data from the JET tokamak to avoid the curse of
+               dimensionality. The resulting networks, named QLKNN-jetexp-15D,
+               show good agreement with the original QuaLiKiz model, both by
+               comparing individual transport quantity predictions and by
+               comparing its impact within the integrated model, JINTRAC. The
+               profile-averaged RMS of the integrated modeling simulations is
+               <10\% for each of the five scenarios tested. This is non-trivial
+               given the potential numerical instabilities present within the
+               highly nonlinear system of equations governing plasma transport,
+               especially considering the novel addition of momentum flux
+               predictions to the model proposed here. An evaluation of all 25
+               NN output quantities at one radial location takes $\sim{}$0.1 ms,
+               104 times faster than the original QuaLiKiz model. Within the
+               JINTRAC integrated modeling tests performed in this study, using
+               QLKNN-jetexp-15D resulted in a speed increase of only 60--100 as
+               other physics modules outside of turbulent transport become the
+               bottleneck.",
+  month     =  "1~" # mar,
+  year      =  2021,
+  url       = "https://doi.org/10.1063/5.0038290",
+  eprint    = "https://pubs.aip.org/aip/pop/article-pdf/doi/10.1063/5.0038290/12361366/032305\_1\_online.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1063/5.0038290",
+  issn      = "1070-664X,1089-7674",
+  language  = "en"
+}
+
+@ARTICLE{Ratta2010-wu,
+  title     = "An advanced disruption predictor for {JET} tested in a simulated
+               real-time environment",
+  author    = "Ratt\'{a}, G A and Vega, J and Murari, A and Vagliasindi, G and
+               Johnson, M F and de Vries, P C",
+  journal   = "Nuclear fusion",
+  publisher = "IOP Publishing",
+  volume    =  50,
+  number    =  2,
+  pages     =  025005,
+  abstract  = "Disruptions are sudden and unavoidable losses of confinement that
+               may put at risk the integrity of a tokamak. However, the physical
+               phenomena leading to disruptions are very complex and non-linear
+               and therefore no satisfactory model has been devised so far
+               either for their avoidance or their prediction. For this reason,
+               machine learning techniques have been extensively pursued in the
+               last years. In this paper a real-time predictor specifically
+               developed for JET and based on support vector machines is
+               presented. The main aim of the present investigation is to obtain
+               high recognition rates in a real-time simulated environment. To
+               this end the predictor has been tested on the time slices of
+               entire discharges exactly as in real world operation. Since the
+               year 2000, the experiments at JET have been organized in
+               campaigns named sequentially beginning with campaign C1. In this
+               paper results from campaign C1 (year 2000) and up to C19 (year
+               2007) are reported. The predictor has been trained with data from
+               JET's campaigns up to C7 with particular attention to reducing
+               the number of missed alarms, which are less than 1\%, for a test
+               set of discharges from the same campaigns used for the training.
+               The false alarms plus premature alarms are of the order of 6.4\%,
+               for a total success rate of more than 92\%. The robustness of the
+               predictor has been proven by testing it with a wide subset of
+               shots of more recent campaigns (from C8 to C19) without any
+               retraining. The success rate over the period between C8 and C14
+               is on average 88\% and never falls below 82\%, confirming the
+               good generalization capabilities of the developed technique.
+               After C14, significant modifications were implemented on JET and
+               its diagnostics and consequently the success rates of the
+               predictor between C15 and C19 decays to an average of 79\%.
+               Finally, the performance of the developed detection system has
+               been compared with the predictions of the JET protection system
+               (JPS). The new predictor clearly outperforms JPS up to about 180
+               ms before the disruptions.",
+  month     =  "1~" # feb,
+  year      =  2010,
+  url       = "https://dx.doi.org/10.1088/0029-5515/50/2/025005",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1088/0029-5515/50/2/025005",
+  issn      = "0029-5515,1741-4326"
+}
+
+@ARTICLE{Bishop1995-qv,
+  title     = "Real-time control of a tokamak plasma using neural networks",
+  author    = "Bishop, Chris M and Haynes, Paul S and Smith, Mike E U and Todd,
+               Tom N and Trotman, David L",
+  journal   = "Neural computation",
+  publisher = "MIT Press - Journals",
+  volume    =  7,
+  number    =  1,
+  pages     = "206--217",
+  abstract  = "In this paper we present results from the first use of neural
+               networks for real-time control of the high-temperature plasma in
+               a tokamak fusion experiment. The tokamak is currently the
+               principal experimental device for research into the magnetic
+               confinement approach to controlled fusion. In an effort to
+               improve the energy confinement properties of the high-temperature
+               plasma inside tokamaks, recent experiments have focused on the
+               use of noncircular cross-sectional plasma shapes. However, the
+               accurate generation of such plasmas represents a demanding
+               problem involving simultaneous control of several parameters on a
+               time scale as short as a few tens of microseconds. Application of
+               neural networks to this problem requires fast hardware, for which
+               we have developed a fully parallel custom implementation of a
+               multilayer perceptron, based on a hybrid of digital and analogue
+               techniques.",
+  month     =  jan,
+  year      =  1995,
+  url       = "https://direct.mit.edu/neco/article/7/1/206-217/5840",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1162/neco.1995.7.1.206",
+  issn      = "0899-7667,1530-888X",
+  language  = "en"
+}
+
+@ARTICLE{Mathews2022-xy,
+  title         = "Physics-informed machine learning techniques for edge plasma
+                   turbulence modelling in computational theory and experiment",
+  author        = "Mathews, Abhilash",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Edge plasma turbulence is critical to the performance of
+                   magnetic confinement fusion devices. Towards better
+                   understanding edge turbulence in both theory and experiment,
+                   a custom-built physics-informed deep learning framework
+                   constrained by partial differential equations is developed to
+                   accurately learn turbulent fields consistent with the
+                   two-fluid theory from partial observations of electron
+                   pressure. This calculation is not otherwise possible using
+                   conventional equilibrium models. With this technique, the
+                   first direct quantitative comparisons of turbulent fields
+                   between electrostatic two-fluid theory and electromagnetic
+                   gyrokinetic modelling are demonstrated with good overall
+                   agreement found in magnetized helical plasmas at low
+                   normalized pressure. To translate these computational
+                   techniques to experimental fusion plasmas, a novel method to
+                   translate brightness measurements of HeI line radiation into
+                   local plasma fluctuations is demonstrated via a newly created
+                   deep learning framework that integrates neutral transport
+                   physics and collisional radiative theory for the $3^3 D - 2^3
+                   P$ transition in atomic helium. Using fast camera data on the
+                   Alcator C-Mod tokamak, this thesis presents the first
+                   2-dimensional time-dependent experimental measurements of the
+                   turbulent electron density, electron temperature, and neutral
+                   density in a fusion plasma using a single spectral line. With
+                   this experimentally inferred data, initial estimates of the
+                   2-dimensional turbulent electric field consistent with
+                   drift-reduced Braginskii theory under the framework of an
+                   axisymmetric fusion plasma with purely toroidal field are
+                   calculated. The inclusion of atomic helium effects on
+                   particle and energy sources are found to strengthen
+                   correlations between the electric field and electron pressure
+                   while broadening turbulent field amplitudes which impact
+                   ${\bf E \times B}$ flows and shearing rates.",
+  month         =  "16~" # may,
+  year          =  2022,
+  url           = "http://arxiv.org/abs/2205.07838",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2205.07838",
+  keywords      = "plasma-physics-ml"
+}
+
+@PHDTHESIS{Kerboua-Benlarbi2024-ih,
+  title    = "Artificial intelligence and fusion plasma control: application to
+              the {WEST} tokamak",
+  author   = "Kerboua-Benlarbi, Samy",
+  abstract = "Fusion in a magnetically confined plasma is still in the realm of
+              fundamental research: in addition to the necessary progress in our
+              theoretical knowledge, the operation of current tokamaks remains
+              delicate, as it requires substantial human effort each time a new
+              experimental scenario is developed. Moreover, the usual
+              combination of linear feedback and feedforward control is not very
+              robust with respect to the non-linear behavior of plasma dynamics.
+              The overall approach is then not compatible with the reliability
+              of a future reactor, and a better control of the plasma is
+              necessary through control algorithms using more theoretical or
+              empirical knowledge. Recently, Reinforcement Learning (RL) has
+              demonstrated its usefulness in many fields, notably tokamak
+              control. By trial-and-error, an agent interacts on an environment,
+              to learn a behavioral policy maximizing a reward which formalizes
+              the overall objectives. Paired with neural networks, deep
+              reinforcement learning becomes a suitable candidate to fulfill
+              these high-dimensional, uncertain and non-linear situations. This
+              thesis aims at applying and extending the said methods on the WEST
+              tokamak, with the development of a general framework to train an
+              agent on a free-boundary equilibrium solver, which simulates the
+              magnetic equilibrium and core profiles evolution. Magnetic
+              feedback control of plasma's shape, position, and current is
+              achieved on multiple control scenarios, with training times
+              significantly reduced by the use of curriculum learning. Several
+              procedures are discussed, not only to enhance generalization
+              within the operational domain of the WEST real-time control
+              system, but also to explore the robustness of RL agents against
+              disturbances and plasma uncertainties. The obtained results offer
+              many perspectives in favor of reinforcement learning and
+              artificial intelligence for routine use in the operations of a
+              magnetically confined fusion device. The inherent connections
+              drawn between RL and classical control are studied, and could lead
+              to a more interpretable use of neural networks as powerful and
+              robust policies, potentially able to manage more actuators and
+              objectives during long plasma discharges.",
+  month    =  nov,
+  year     =  2024,
+  url      = "https://theses.hal.science/tel-04938923",
+  keywords = "Reinforcement learning ; Tokamak control ; Neural networks ;
+              Distributed computing ; Probabilistic inference ; Apprentissage
+              par renforcement ; Contr\^{o}le des tokamaks ; R\'{e}seaux de
+              neurones ; Calcul distribu\'{e} ; Inf\'{e}rence
+              probabiliste;plasma-physics-ml",
+  school   = "Universit\'{e} C\^{o}te d'Azur"
+}
+
+@ARTICLE{Arnold2023-yk,
+  title         = "Continuous Convolutional Neural Networks for disruption
+                   prediction in nuclear fusion plasmas",
+  author        = "Arnold, William F and Spangher, Lucas and Rea, Christina",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Grid decarbonization for climate change requires dispatchable
+                   carbon-free energy like nuclear fusion. The tokamak concept
+                   offers a promising path for fusion, but one of the foremost
+                   challenges in implementation is the occurrence of energetic
+                   plasma disruptions. In this study, we delve into Machine
+                   Learning approaches to predict plasma state outcomes. Our
+                   contributions are twofold: (1) We present a novel application
+                   of Continuous Convolutional Neural Networks for disruption
+                   prediction and (2) We examine the advantages and
+                   disadvantages of continuous models over discrete models for
+                   disruption prediction by comparing our model with the
+                   previous, discrete state of the art, and show that continuous
+                   models offer significantly better performance (Area Under the
+                   Receiver Operating Characteristic Curve = 0.974 v.s. 0.799)
+                   with fewer parameters",
+  month         =  "3~" # dec,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2312.01286",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2312.01286",
+  keywords      = "plasma-physics-ml"
+}
+
+@MISC{Felici2011-ys,
+  title     = "Real-time control of tokamak plasmas: From control of physics to
+               physics-based control",
+  author    = "Felici, Federico",
+  publisher = "Lausanne, EPFL",
+  abstract  = "Stable, high-performance operation of a tokamak requires several
+               plasma control problems to be handled simultaneously. Moreover,
+               the complex physics which governs the tokamak plasma evolution
+               must be studied and understood to make correct choices in
+               controller design. In this thesis, the two subjects have been
+               merged, using control solutions as experimental tool for physics
+               studies, and using physics knowledge for developing new advanced
+               control solutions. The TCV tokamak at CRPP-EPFL is ideally placed
+               to explore issues at the interface between plasma physics and
+               plasma control, by combining a state-of-the-art digital real-time
+               control system with a flexible and powerful set of actuators, in
+               particular the electron cyclotron heating and current drive
+               system (ECRH/ECCD). This unique experimental platform has been
+               used to develop and test new control strategies for three
+               important and reactor-relevant tokamak plasma physics
+               instabilities, including the sawtooth, the edge localized mode
+               (ELM) and the neoclassical tearing mode (NTM). These control
+               strategies offer new possibilities for fusion plasma control and
+               at the same time facilitate studies of the physics of the
+               instabilities with greater precision and detail in a controlled
+               environment. The period of the sawtooth crash, a periodic MHD
+               instability in the core of a tokamak plasma, can be varied by
+               localized deposition of ECRH/ECCD near the q = 1 surface, where q
+               is the safety factor. Exploiting this known physical phenomenon,
+               a sawtooth pacing controller was developed which is able to
+               precisely control the time of appearance of the next sawtooth
+               crash. It was also shown that each individual sawtooth period can
+               be controlled in real-time. A similar scheme is applied to H-mode
+               plasmas with type-I ELMs, where it is shown that pacing
+               regularizes the ELM period. The regular, reproducible and
+               therefore predictable sawtooth crashes obtained by the sawtooth
+               pacing controller have been used to study the relationship
+               between sawteeth and NTMs. It is known that post-crash MHD
+               activity can provide the ``seed'' island for an NTM, which then
+               grows under its neoclassical bootstrap drive. Experiments are
+               shown which demonstrate that the seeding of 3/2 NTMs by long
+               sawtooth crashes can be avoided by preemptive, crash-synchronized
+               EC power injection pulses at the q = 3/2 rational surface
+               location. NTM stabilization experiments in which the ECRH
+               deposition location is moved in real-time with steerable mirrors
+               have shown effective stabilization of both 3/2 and 2/1 NTMs, and
+               have precisely localized the deposition location that is most
+               effective. Studies of current-profile driven destabilization of
+               tearing modes in TCV plasmas with significant amounts of ECCD
+               show a great sensitivity to details of the current profile, but
+               failed to identify a stationary region in the parameter space in
+               which NTMs are always destabilized. This suggests that transient
+               effects intrinsically play a role. Next to instability control,
+               the simultaneous control of magnetic and kinetic plasma profiles
+               is another key requirement for advanced tokamak operation. While
+               control of kinetic plasma profiles around an operating point can
+               be handled using standard linear control techniques, the strongly
+               nonlinear physics of the coupled profiles complicates the problem
+               significantly. Even more, since internal magnetic quantities are
+               difficult to measure with sufficient spatial and temporal
+               resolution --even after years of diagnostic development-- routine
+               control of tokamak plasma profiles remains a daunting and
+               extremely challenging task. In this thesis, a model-based
+               approach is used in which physics understanding of plasma current
+               and energy transport is embedded in the control solution. To this
+               aim, a new lightweight transport code has been derived focusing
+               on simplicity and speed of simulation, which is compatible with
+               the demands for real-time control. This code has been named
+               RAPTOR (RApid Plasma Transport simulatOR). In a first-of-its-kind
+               application, the partial differential equation for current
+               diffusion is solved in real-time during a plasma shot in the TCV
+               control system using RAPTOR. This concept is known in control
+               terms as a state observer, and it is applied experimentally to
+               the tokamak current density profile problem for the first time.
+               The real-time simulation gives a physics-model-based estimate of
+               key plasma quantities, to be controlled or monitored in real-time
+               by different control systems. Any available diagnostics can be
+               naturally included into the real-time simulation providing
+               additional constraints and removing measurement uncertainties.
+               The real-time simulation approach holds the advantage that
+               knowledge of the plasma profiles is no longer restricted to those
+               points in space and time where they are measured by a diagnostic,
+               but that an estimate for any quantity can be computed at any
+               time. This includes estimates of otherwise unmeasurable
+               quantities such as the loop voltage profile or the bootstrap
+               current distribution. In a first closed-loop experiment, an
+               estimate of the internal inductance resulting from the real-time
+               simulation is feedback controlled, independently from the plasma
+               central temperature, by an appropriate mix of co- and counter-
+               ECCD. As a tokamak plasma evolves from one state to another
+               during plasma ramp-up or ramp-down, the profile trajectories must
+               stay within a prescribed operational envelope delimited by
+               physics instabilities and engineering constraints. Determining
+               the appropriate actuator command sequence to navigate this
+               operational space has traditionally been a trial-and-error
+               procedure based on experience of tokamak physics operators. A
+               computational technique is developed based on the RAPTOR code
+               which can calculate these trajectories based on the profile
+               transport physics model, by solving an open-loop optimal control
+               problem. The solution of this problem is greatly aided by the
+               fact that the code returns the plasma state trajectory
+               sensitivities to input trajectory parameters, a functionality
+               which is unique to RAPTOR. This information can also be used to
+               construct linearized models around the optimal trajectory, and to
+               determine the active constraint, which can be used for
+               time-varying closed-loop controller design. This
+               physics-model-based approach has shown excellent results and
+               holds great potential for application in other tokamaks worldwide
+               as well as in future devices.",
+  year      =  2011,
+  url       = "https://infoscience.epfl.ch/handle/20.500.14299/70696",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.5075/EPFL-THESIS-5203"
+}
+
+@ARTICLE{Furia2022-mx,
+  title     = "Normalizing flows for likelihood-free inference with fusion
+               simulations",
+  author    = "Furia, C S and Churchill, R M",
+  journal   = "Plasma physics and controlled fusion",
+  publisher = "IOP Publishing",
+  volume    =  64,
+  number    =  10,
+  pages     =  104003,
+  abstract  = "AbstractFluid-based scrape-off layer transport codes, such as
+               UEDGE, are heavily utilized in tokamak analysis and design, but
+               typically require user-specified anomalous transport coefficients
+               to match experiments. Determining the uniqueness of these
+               parameters and the uncertainties in them to match experiments can
+               provide valuable insights to fusion scientists. We leverage
+               recent work in the area of likelihood-free inference
+               (`simulation-based inference') to train a neural network, which
+               enables accurate statistical inference of the anomalous transport
+               coefficients given experimental plasma profile input. UEDGE is
+               treated as a black-box simulator and runs multiple times with
+               anomalous transport coefficients sampled from priors, and the
+               neural network is trained on these simulations to emulate the
+               posterior. The neural network is trained as a normalizing flow
+               model for density estimation, allowing it to accurately represent
+               complicated, high-dimensional distribution functions. With a
+               fixed simulation budget, we compare a single-round procedure to a
+               multi-round approach that guides the training simulations toward
+               a specific target observation. We discuss the future
+               possibilities for use of amortized models, which train on a wide
+               range of simulations and enable fast statistical inference for
+               results during experiments.",
+  month     =  "1~" # oct,
+  year      =  2022,
+  url       = "https://dx.doi.org/10.1088/1361-6587/ac828d",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1088/1361-6587/ac828d",
+  issn      = "0741-3335,1361-6587"
+}
+
+@ARTICLE{Sorokin2025-fj,
+  title    = "Magnetic control of tokamak plasmas through deep reinforcement
+              learning with privileged information",
+  author   = "Sorokin, Dmitri and Granovskiy, Aleksandr and Kharitonov, Ivan and
+              Stokolesov, Maksim and Prokofyev, Igor and Adishchev, Evgeny and
+              Subbotin, Georgy and Nurgaliev, Maxim",
+  abstract = "Reinforcement learning (RL) is capable of training
+              high-performance control policies for a variety of domains from
+              computer games [1] to physical robots [2, 3] and scientific
+              equipment [4]. Recently, RL was applied to train real-time
+              controllers for a tokamak plasma [5, 6, 7]. Tokamak plasma is
+              controlled at a time scale of hundreds of microseconds and
+              requires precise stabilization algorithms, which should be robust
+              to sensor and actuator noises. In the present work, we propose a
+              novel approach to real-time plasma control using reinforcement
+              learning with privileged information. Our method provides fast
+              training times and learns an efficient control policy for
+              real-time magnetic control without explicit plasma state
+              reconstruction. We validate our approach on various plasma
+              scenarios and successfully test it on a physical DIII-D tokamak.",
+  year     =  2025,
+  url      = "https://openreview.net/forum?id=vp6K02lz4E",
+  file     = "All_Papers/plasma-physics-ml/Sorokin_et_al._2025_-_Magnetic_control_of_tokamak_plasmas_through_deep_reinforcement_learning_with_privileged_information.pdf",
+  keywords = "plasma-physics-ml"
+}
+
+@ARTICLE{Davies2024-jm,
+  title     = "A semi-automated algorithm for designing stellarator divertor and
+               limiter plates and application to {HSX}",
+  author    = "Davies, Robert and Feng, Yuhe and Boeyaert, Dieter and Schmitt,
+               John C and Gerard, Michael J and Garcia, Kelly A and Schmitz,
+               Oliver and Geiger, Benedikt and Henneberg, Sophia A",
+  journal   = "Nuclear fusion",
+  publisher = "IOP Publishing",
+  volume    =  64,
+  number    =  12,
+  pages     =  126044,
+  abstract  = "Abstract We present a semi-automated algorithm for designing
+               three-dimensional divertor or limiter plates targeting low heat
+               loads. The algorithm designs the plates in two stages: firstly,
+               the parallel heat flux distribution is caught on
+               vertically-inclined plates at one or several toroidal locations.
+               Secondly, the power per unit area is reduced by stretching,
+               tilting and bending the plates toroidally. Heat transport is
+               modelled using the EMC3-Lite code, which uses an anisotropic
+               diffusion model. We apply this scheme to HSX, a medium-sized
+               stellarator located at the University of Wisconsin--Madison.
+               Starting from the current machine with an extended vessel wall,
+               we construct plates which are able to effectively catch and
+               spread the heat for three different magnetic configurations. The
+               scheme has a computational cost in the order of tens of
+               CPU-minutes, making it a powerful tool for semi-automated
+               plasma-facing component design in three-dimensional environments.",
+  month     =  "1~" # dec,
+  year      =  2024,
+  url       = "https://dx.doi.org/10.1088/1741-4326/ad8017",
+  file      = "All_Papers/plasma-physics-ml/Davies_et_al._2024_-_A_semi-automated_algorithm_for_designing_stellarator_divertor_and_limiter_plates_and_application_to_HSX.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1088/1741-4326/ad8017",
+  issn      = "0029-5515,1741-4326"
+}
+
+@ARTICLE{Wang2025-il,
+  title     = "Active ramp-down control and trajectory design for tokamaks with
+               neural differential equations and reinforcement learning",
+  author    = "Wang, Allen M and Rea, Cristina and So, Oswin and Dawson, Charles
+               and Garnier, Darren T and Fan, Chuchu",
+  journal   = "Communications physics",
+  publisher = "Springer Science and Business Media LLC",
+  volume    =  8,
+  number    =  1,
+  pages     =  231,
+  abstract  = "The tokamak offers a promising path to fusion energy, but
+               disruptions pose a major economic risk, motivating solutions to
+               manage their consequence. This work develops a reinforcement
+               learning approach to this problem by training a policy to
+               ramp-down the plasma current while avoiding limits on a number of
+               quantities correlated with disruptions. The policy training
+               environment is a hybrid physics and machine learning model
+               trained on simulations of the SPARC primary reference discharge
+               (PRD) ramp-down, an upcoming burning plasma scenario which we use
+               as a testbed. To address physics uncertainty and model
+               inaccuracies, the simulation is massively parallelized on GPU
+               with randomized physics parameters during policy training. The
+               trained policy is then run in feedback on a transport simulator
+               as a demonstration. We also directly address the crucial issue of
+               control validation by demonstrating that a constraint-conditioned
+               policy can be a trajectory design assistant that designs a
+               library of feed-forward trajectories to handle different physics
+               conditions and user constraint settings, a promising approach for
+               the sensitive context of burning plasma tokamaks. Finally, we
+               demonstrate that the training environment can be a useful
+               platform for feed-forward optimization approaches by optimizing
+               feed-forward trajectories that are robust to physics uncertainty.",
+  month     =  "4~" # jun,
+  year      =  2025,
+  url       = "https://doi.org/10.1038/s42005-025-02146-6",
+  file      = "All_Papers/plasma-physics-ml/Wang_et_al._2025_-_Active_ramp-down_control_and_trajectory_design_for_tokamaks_with_neural_differential_equations_and_reinforcement_learning.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1038/s42005-025-02146-6",
+  issn      = "2399-3650",
+  language  = "en"
+}
+
+@ARTICLE{Clavier2024-sv,
+  title         = "A generative machine learning surrogate model of plasma
+                   turbulence",
+  author        = "Clavier, B and Zarzoso, D and del-Castillo-Negrete, D and
+                   Frenod, E",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Generative artificial intelligence methods are employed for
+                   the first time to construct a surrogate model for plasma
+                   turbulence that enables long time transport simulations. The
+                   proposed GAIT (Generative Artificial Intelligence Turbulence)
+                   model is based on the coupling of a convolutional variational
+                   auto-encoder, that encodes precomputed turbulence data into a
+                   reduced latent space, and a recurrent neural network and
+                   decoder that generates new turbulence states 400 times faster
+                   than the direct numerical integration. The model is applied
+                   to the Hasegawa-Wakatani (HW) plasma turbulence model, that
+                   is closely related to the quasigeostrophic model used in
+                   geophysical fluid dynamics. Very good agreement is found
+                   between the GAIT and the HW models in the spatio-temporal
+                   Fourier and Proper Orthogonal Decomposition spectra, and the
+                   flow topology characterized by the Okubo-Weiss decomposition.
+                   The GAIT model also reproduces Lagrangian transport including
+                   the probability distribution function of particle
+                   displacements and the effective turbulent diffusivity.",
+  month         =  "21~" # may,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2405.13232",
+  file          = "All_Papers/plasma-physics-ml/Clavier_et_al._2024_-_A_generative_machine_learning_surrogate_model_of_plasma_turbulence.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2405.13232",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{O-Shea2023-xr,
+  title     = "Automatic identification of edge localized modes in the
+               {DIII}-{D} tokamak",
+  author    = "O'Shea, Finn H and Joung, Semin and Smith, David R and Coffee,
+               Ryan",
+  journal   = "APL Machine Learning",
+  publisher = "AIP Publishing",
+  volume    =  1,
+  number    =  2,
+  pages     =  026102,
+  abstract  = "Fusion power production in tokamaks uses discharge configurations
+               that risk producing strong type I edge localized modes. The
+               largest of these modes will likely increase impurities in the
+               plasma and potentially damage plasma facing components, such as
+               the protective heat and particle divertor. Machine learning-based
+               prediction and control may provide for the automatic detection
+               and mitigation of these damaging modes before they grow too large
+               to suppress. To that end, large labeled datasets are required for
+               the supervised training of machine learning models. We present an
+               algorithm that achieves 97.7\% precision when automatically
+               labeling edge localized modes in the large DIII-D tokamak
+               discharge database. The algorithm has no user controlled
+               parameters and is largely robust to tokamak and plasma
+               configuration changes. This automatically labeled database of
+               events can subsequently feed future training of machine learning
+               models aimed at autonomous edge localized mode control and
+               suppression.",
+  month     =  "1~" # jun,
+  year      =  2023,
+  url       = "https://doi.org/10.1063/5.0134001",
+  file      = "All_Papers/plasma-physics-ml/O'Shea_et_al._2023_-_Automatic_identification_of_edge_localized_modes_in_the_DIII-D_tokamak.pdf",
+  eprint    = "https://pubs.aip.org/aip/aml/article-pdf/doi/10.1063/5.0134001/16820152/026102\_1\_5.0134001.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1063/5.0134001",
+  issn      = "2770-9019",
+  language  = "en"
+}
+
+@ARTICLE{Seo2024-bo,
+  title     = "Avoiding fusion plasma tearing instability with deep
+               reinforcement learning",
+  author    = "Seo, Jaemin and Kim, Sangkyeun and Jalalvand, Azarakhsh and
+               Conlin, Rory and Rothstein, Andrew and Abbate, Joseph and
+               Erickson, Keith and Wai, Josiah and Shousha, Ricardo and Kolemen,
+               Egemen",
+  journal   = "Nature",
+  publisher = "Springer Science and Business Media LLC",
+  volume    =  626,
+  number    =  8000,
+  pages     = "746--751",
+  abstract  = "For stable and efficient fusion energy production using a tokamak
+               reactor, it is essential to maintain a high-pressure hydrogenic
+               plasma without plasma disruption. Therefore, it is necessary to
+               actively control the tokamak based on the observed plasma state,
+               to manoeuvre high-pressure plasma while avoiding tearing
+               instability, the leading cause of disruptions. This presents an
+               obstacle-avoidance problem for which artificial intelligence
+               based on reinforcement learning has recently shown remarkable
+               performance1-4. However, the obstacle here, the tearing
+               instability, is difficult to forecast and is highly prone to
+               terminating plasma operations, especially in the ITER baseline
+               scenario. Previously, we developed a multimodal dynamic model
+               that estimates the likelihood of future tearing instability based
+               on signals from multiple diagnostics and actuators5. Here we
+               harness this dynamic model as a training environment for
+               reinforcement-learning artificial intelligence, facilitating
+               automated instability prevention. We demonstrate artificial
+               intelligence control to lower the possibility of disruptive
+               tearing instabilities in DIII-D6, the largest magnetic fusion
+               facility in the United States. The controller maintained the
+               tearing likelihood under a given threshold, even under relatively
+               unfavourable conditions of low safety factor and low torque. In
+               particular, it allowed the plasma to actively track the stable
+               path within the time-varying operational space while maintaining
+               H-mode performance, which was challenging with traditional
+               preprogrammed control. This controller paves the path to
+               developing stable high-performance operational scenarios for
+               future use in ITER.",
+  month     =  feb,
+  year      =  2024,
+  url       = "https://doi.org/10.1038/s41586-024-07024-9",
+  file      = "All_Papers/plasma-physics-ml/Seo_et_al._2024_-_Avoiding_fusion_plasma_tearing_instability_with_deep_reinforcement_learning.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1038/s41586-024-07024-9",
+  pmc       = "PMC10881383",
+  pmid      =  38383624,
+  issn      = "0028-0836,1476-4687",
+  language  = "en"
+}
+
+@ARTICLE{Zheng2022-pd,
+  title         = "Transferable cross-tokamak disruption prediction with deep
+                   hybrid neural network feature extractor",
+  author        = "Zheng, Wei and Xue, Fengming and Zhang, Ming and Chen,
+                   Zhongyong and Shen, Chengshuo and Ai, Xinkun and Wang,
+                   Nengchao and Chen, Dalong and Guo, Bihao and Ding, Yonghua
+                   and Chen, Zhipeng and Yang, Zhoujun and Shen, Biao and Xiao,
+                   Bingjia and Pan, Yuan",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Predicting disruptions across different tokamaks is a great
+                   obstacle to overcome. Future tokamaks can hardly tolerate
+                   disruptions at high performance discharge. Few disruption
+                   discharges at high performance can hardly compose an abundant
+                   training set, which makes it difficult for current
+                   data-driven methods to obtain an acceptable result. A machine
+                   learning method capable of transferring a disruption
+                   prediction model trained on one tokamak to another is
+                   required to solve the problem. The key is a disruption
+                   prediction model containing a feature extractor that is able
+                   to extract common disruption precursor traces in tokamak
+                   diagnostic data, and a transferable disruption classifier.
+                   Based on the concerns above, the paper first presents a deep
+                   fusion feature extractor designed specifically for extracting
+                   disruption precursor features from common diagnostics on
+                   tokamaks according to currently known precursors of
+                   disruption, providing a promising foundation for transferable
+                   models. The fusion feature extractor is proved by comparing
+                   with manual feature extraction on J-TEXT. Based on the
+                   feature extractor trained on J-TEXT, the disruption
+                   prediction model was transferred to EAST data with mere 20
+                   discharges from EAST experiment. The performance is
+                   comparable with a model trained with 1896 discharges from
+                   EAST. From the comparison among other model training
+                   scenarios, transfer learning showed its potential in
+                   predicting disruptions across different tokamaks.",
+  month         =  "19~" # aug,
+  year          =  2022,
+  url           = "http://arxiv.org/abs/2208.09594",
+  file          = "All_Papers/plasma-physics-ml/Zheng_et_al._2022_-_Transferable_cross-tokamak_disruption_prediction_with_deep_hybrid_neural_network_feature_extractor.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2208.09594",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Lu2023-mf,
+  title     = "Fast equilibrium reconstruction by deep learning on {EAST}
+               tokamak",
+  author    = "Lu, Jingjing and Hu, Youjun and Xiang, Nong and Sun, Youwen",
+  journal   = "AIP advances",
+  publisher = "AIP Publishing",
+  volume    =  13,
+  number    =  7,
+  pages     =  075007,
+  abstract  = "A deep neural network is developed and trained on magnetic
+               measurements (input) and EFIT poloidal magnetic flux (output) on
+               the EAST tokamak. In optimizing the network architecture, we use
+               automatic optimization to search for the best hyperparameters,
+               which helps in better model generalization. We compare the inner
+               magnetic surfaces and last-closed-flux surfaces with those from
+               EFIT. We also calculated the normalized internal inductance,
+               which is completely determined by the poloidal magnetic flux and
+               can further reflect the accuracy of the prediction. The time
+               evolution of the internal inductance in full discharge is
+               compared with that provided by EFIT. All of the comparisons show
+               good agreement, demonstrating the accuracy of the machine
+               learning model, which has high spatial resolution compared with
+               the off-line EFIT while still meeting the time constraint of
+               real-time control.",
+  month     =  "1~" # jul,
+  year      =  2023,
+  url       = "https://doi.org/10.1063/5.0152318",
+  file      = "All_Papers/plasma-physics-ml/Lu_et_al._2023_-_Fast_equilibrium_reconstruction_by_deep_learning_on_EAST_tokamak.pdf",
+  eprint    = "https://pubs.aip.org/aip/adv/article-pdf/doi/10.1063/5.0152318/18032942/075007\_1\_5.0152318.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1063/5.0152318",
+  issn      = "2158-3226",
+  language  = "en"
+}
+
+@ARTICLE{Kim2024-vg,
+  title         = "Highest fusion performance without harmful edge energy bursts
+                   in tokamak",
+  author        = "Kim, Sangkyeun and Shousha, Ricardo and Yang, Seongmoo and
+                   Hu, Qiming and Hahn, Sanghee and Jalalvand, Azarakhsh and
+                   Park, Jong-Kyu and Logan, Nikolas Christopher and Nelson,
+                   Andrew Oakleigh and Na, Yong-Su and Nazikian, Raffi and
+                   Wilcox, Robert and Hong, Rongjie and Rhodes, Terry and
+                   Paz-Soldan, Carlos and Jeon, Youngmu and Kim, Minwoo and Ko,
+                   Wongha and Lee, Jongha and Battey, Alexander and Bortolon,
+                   Alessandro and Snipes, Joseph and Kolemen, Egemen",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "The path of tokamak fusion and ITER is maintaining
+                   high-performance plasma to produce sufficient fusion power.
+                   This effort is hindered by the transient energy burst arising
+                   from the instabilities at the boundary of high-confinement
+                   plasmas. The application of 3D magnetic perturbations is the
+                   method in ITER and possibly in future fusion power plants to
+                   suppress this instability and avoid energy busts damaging the
+                   device. Unfortunately, the conventional use of the 3D field
+                   in tokamaks typically leads to degraded fusion performance
+                   and an increased risk of other plasma instabilities, two
+                   severe issues for reactor implementation. In this work, we
+                   present an innovative 3D field optimization, exploiting
+                   machine learning, real-time adaptability, and multi-device
+                   capabilities to overcome these limitations. This integrated
+                   scheme is successfully deployed on DIII-D and KSTAR tokamaks,
+                   consistently achieving reactor-relevant core confinement and
+                   the highest fusion performance without triggering damaging
+                   instabilities or bursts while demonstrating ITER-relevant
+                   automated 3D optimization for the first time. This is enabled
+                   both by advances in the physics understanding of
+                   self-organized transport in the plasma edge and by advances
+                   in machine-learning technology, which is used to optimize the
+                   3D field spectrum for automated management of a volatile and
+                   complex system. These findings establish real-time adaptive
+                   3D field optimization as a crucial tool for ITER and future
+                   reactors to maximize fusion performance while simultaneously
+                   minimizing damage to machine components.",
+  month         =  "8~" # may,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2405.05452",
+  file          = "All_Papers/plasma-physics-ml/Kim_et_al._2024_-_Highest_fusion_performance_without_harmful_edge_energy_bursts_in_tokamak.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2405.05452",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Yang2024-ya,
+  title     = "Implementing deep learning-based disruption prediction in a
+               drifting data environment of new tokamak: {HL}-3",
+  author    = "Yang, Zongyu and Zhong, Wulyu and Xia, F and Gao, Zhe and Zhu,
+               Xiaobo Xiao and Li, Jiyuan and Hu, Liwen and Xu, Zhaohe and Li,
+               Da and Zheng, Guohui and Chen, Y H and Zhang, Junzhao and Li, B
+               and Zhang, Xiaolong and Zhu, Yiren and Tong, Ruihai and Dong, Y B
+               and Zhang, Yipo and Yuan, Boda and Yu, Xin and He, Zongyuhui and
+               Tian, Wenjing and Gong, Xinwen and Xu, Min",
+  journal   = "Nuclear fusion",
+  publisher = "IOP Publishing",
+  volume    =  65,
+  number    =  2,
+  pages     =  026030,
+  abstract  = "Abstract A deep learning-based disruption prediction algorithm
+               has been implemented on a new tokamak, HL-3. An Area Under
+               receiver-operator characteristic Curve (AUC) of 0.940 has been
+               realized offline over a test campaign involving 72 disruptive and
+               240 non-disruptive shots, despite the limited training data
+               available from the initial two campaigns. In addition to the
+               well-documented challenge of insufficient training data, a
+               previously unanticipated issue is addressed that the data
+               distribution of a new device is continuously drifting. The plasma
+               scans across a broad parameter space, bringing a drifting
+               distribution of disruption causes and diagnostic data. This
+               problem is often overlooked in previous implementations on
+               steadily operating tokamaks, necessitating greater attention in
+               future tokamaks like ITER. To address these challenges,
+               innovative modules including predict-first neural network (PFNN),
+               data augmentation, and pseudo data placeholders are developed and
+               implemented, which promotes the accuracy by up to 20\%. A series
+               of advantages are also brought by the modules, including the
+               robustness in handling missing input channels, and the
+               interpretability to identify which parameter of plasma is under
+               abnormal condition. The results demonstrate that, with dedicated
+               data collection and algorithm implementation, the issues of
+               limited data and drifting distribution can be overcome, and
+               further, the deep learning-based algorithm can reliably provide
+               disruption alarms on a new tokamak.",
+  month     =  "27~" # dec,
+  year      =  2024,
+  url       = "https://dx.doi.org/10.1088/1741-4326/ada396",
+  file      = "All_Papers/plasma-physics-ml/Yang_et_al._2024_-_Implementing_deep_learning-based_disruption_prediction_in_a_drifting_data_environment_of_new_tokamak_-_HL-3.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1088/1741-4326/ada396",
+  issn      = "0029-5515,1741-4326"
+}
+
+@ARTICLE{Carvalho2024-wu,
+  title     = "Learning the dynamics of a one-dimensional plasma model with
+               graph neural networks",
+  author    = "Carvalho, Diogo D and Ferreira, Diogo R and Silva, Lu\'{\i}s O",
+  journal   = "Machine learning: science and technology",
+  publisher = "IOP Publishing",
+  volume    =  5,
+  number    =  2,
+  pages     =  025048,
+  abstract  = "Abstract We explore the possibility of fully replacing a plasma
+               physics kinetic simulator with a graph neural network-based
+               simulator. We focus on this class of surrogate models given the
+               similarity between their message-passing update mechanism and the
+               traditional physics solver update, and the possibility of
+               enforcing known physical priors into the graph construction and
+               update. We show that our model learns the kinetic plasma dynamics
+               of the one-dimensional plasma model, a predecessor of
+               contemporary kinetic plasma simulation codes, and recovers a wide
+               range of well-known kinetic plasma processes, including plasma
+               thermalization, electrostatic fluctuations about thermal
+               equilibrium, and the drag on a fast sheet and Landau damping. We
+               compare the performance against the original plasma model in
+               terms of run-time, conservation laws, and temporal evolution of
+               key physical quantities. The limitations of the model are
+               presented and possible directions for higher-dimensional
+               surrogate models for kinetic plasmas are discussed.",
+  month     =  "1~" # jun,
+  year      =  2024,
+  url       = "http://dx.doi.org/10.1088/2632-2153/ad4ba6",
+  file      = "All_Papers/plasma-physics-ml/Carvalho_et_al._2024_-_Learning_the_dynamics_of_a_one-dimensional_plasma_model_with_graph_neural_networks.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1088/2632-2153/ad4ba6",
+  issn      = "2632-2153"
+}
+
+@ARTICLE{Clavier2025-az,
+  title     = "A generative artificial intelligence framework for long-time
+               plasma turbulence simulations",
+  author    = "Clavier, B and Zarzoso, D and del-Castillo-Negrete, D and
+               Fr\'{e}nod, E",
+  journal   = "Physics of plasmas",
+  publisher = "AIP Publishing",
+  volume    =  32,
+  number    =  6,
+  pages     =  063905,
+  abstract  = "Generative deep learning techniques are employed in a novel
+               framework for the construction of surrogate models capturing the
+               spatiotemporal dynamics of 2D plasma turbulence. The proposed
+               Generative Artificial Intelligence Turbulence (GAIT) framework
+               enables the acceleration of turbulence simulations for long-time
+               transport studies. GAIT leverages a convolutional variational
+               auto-encoder and a recurrent neural network to generate new
+               turbulence data from existing simulations, extending the time
+               horizon of transport studies with minimal computational cost. The
+               application of the GAIT framework to plasma turbulence using the
+               Hasegawa--Wakatani (HW) model is presented, evaluating its
+               performance via various analyses. Very good agreement is found
+               between the GAIT and the HW models in the spatiotemporal Fourier
+               and Proper Orthogonal Decomposition spectra, the flow topology
+               characterized by the Okubo--Weiss parameter, and the time
+               autocorrelation function of turbulent fluctuations. Excellent
+               agreement has also been obtained in the probability distribution
+               function of particle displacements and the effective turbulent
+               diffusivity. In-depth analyses of the latent space of turbulent
+               states, choice of hyperparameters and alternative deep learning
+               models for the time prediction are presented. Our results
+               highlight the potential of Artificial Intelligence-based
+               surrogate models to overcome the computational challenges in
+               turbulence simulation, which can be extended to other situations
+               such as geophysical fluid dynamics.",
+  month     =  "1~" # jun,
+  year      =  2025,
+  url       = "https://doi.org/10.1063/5.0255386",
+  file      = "All_Papers/plasma-physics-ml/Clavier_et_al._2025_-_A_generative_artificial_intelligence_framework_for_long-time_plasma_turbulence_simulations.pdf",
+  eprint    = "https://pubs.aip.org/aip/pop/article-pdf/doi/10.1063/5.0255386/20553361/063905\_1\_5.0255386.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1063/5.0255386",
+  issn      = "1070-664X,1089-7674",
+  language  = "en"
+}
+
+@ARTICLE{Brown2024-eq,
+  title     = "Multi-objective Bayesian optimization for design of
+               Pareto-optimal current drive profiles in {STEP}",
+  author    = "Brown, Theodore and Marsden, Stephen and Gopakumar, Vignesh and
+               Terenin, Alexander and Ge, Hong and Casson, Francis",
+  journal   = "IEEE transactions on plasma science. IEEE Nuclear and Plasma
+               Sciences Society",
+  publisher = "Institute of Electrical and Electronics Engineers (IEEE)",
+  volume    =  52,
+  number    =  9,
+  pages     = "3904--3909",
+  month     =  sep,
+  year      =  2024,
+  url       = "http://dx.doi.org/10.1109/TPS.2024.3382775",
+  file      = "All_Papers/plasma-physics-ml/Brown_et_al._2024_-_Multi-objective_Bayesian_optimization_for_design_of_Pareto-optimal_current_drive_profiles_in_STEP.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1109/tps.2024.3382775",
+  issn      = "0093-3813,1939-9375"
+}
+
+@ARTICLE{Seo2024-pc,
+  title     = "Leveraging physics-informed neural computing for transport
+               simulations of nuclear fusion plasmas",
+  author    = "Seo, J and Kim, I H and Nam, H",
+  journal   = "Nuclear engineering and technology",
+  publisher = "Elsevier BV",
+  volume    =  56,
+  number    =  12,
+  pages     = "5396--5404",
+  abstract  = "For decades, plasma transport simulations in tokamaks have used
+               the finite difference method (FDM), a relatively simple scheme to
+               solve the transport equations, a coupled set of time-dependent
+               partial differential equations. In this FDM approach, typically
+               over O(105) time steps are needed for a single discharge, to
+               mitigate numerical instabilities induced by stiff transport
+               coefficients. It requires significant computing time as costly
+               transport models are repeatedly called in a serial manner,
+               proportional to the number of time steps. Additionally, the
+               unidirectional calculations of FDM make it difficult to predict
+               regions prior to the initial condition or apply additional
+               temporal constraints. In this study, we discuss using a new
+               scheme to solve plasma transport based on physics-informed neural
+               networks (PINNs). PINN iteratively updates a function that maps
+               spatiotemporal coordinates to plasma states, gradually reducing
+               errors in transport equations. The required number of updates in
+               PINNs is several orders of magnitude less than the chronological
+               iterations in FDM. Furthermore, it is free from numerical
+               instabilities arising from finite grids and enables more
+               versatile semi-predictive simulations with arbitrary
+               spatiotemporal constraints. In this paper, we discuss the
+               features and potentials of the tokamak transport solver using
+               PINNs through comparisons with FDM, and also its drawbacks and
+               challenges.",
+  month     =  jul,
+  year      =  2024,
+  url       = "http://dx.doi.org/10.1016/j.net.2024.07.048",
+  keywords  = "Nuclear fusion, Tokamak transport, Physics-informed neural
+               network;plasma-physics-ml",
+  doi       = "10.1016/j.net.2024.07.048",
+  issn      = "1738-5733,2234-358X",
+  language  = "en"
+}
+
+@ARTICLE{Rutigliano2025-cr,
+  title     = "Physics-informed neural networks for the modelling of
+               interferometer-polarimetry in tokamak multi-diagnostic
+               equilibrium reconstructions",
+  author    = "Rutigliano, Novella and Rossi, Riccardo and Murari, Andrea and
+               Gelfusa, Michela and Craciunescu, Teddy and Mazon, Didier and
+               Gaudio, Pasquale",
+  journal   = "Plasma physics and controlled fusion",
+  publisher = "IOP Publishing",
+  volume    =  67,
+  number    =  6,
+  pages     =  065029,
+  abstract  = "Abstract Equilibrium reconstruction is crucial in nuclear fusion
+               and plasma physics, as it enables the understanding of the
+               distribution of fundamental plasma quantities within a reactor.
+               Given that equilibrium reconstruction is an ill-posed problem, it
+               is essential to constrain the algorithm with multiple diagnostics
+               to achieve accurate results. Among these, the
+               interferometer-polarimeter is one of the most valuable
+               diagnostics for constraining equilibrium reconstruction, as it
+               provides line-integrated information about the internal magnetic
+               fields. However, the polarisation evolution of an electromagnetic
+               wave traversing a magnetised plasma exhibits non-linear
+               behaviour, making it challenging to incorporate polarimeter data
+               into the reconstruction process. This difficulty often leads to
+               the use of a linear approximation, known as the type-I
+               approximation, in the inversion algorithm. Unfortunately, this
+               approximation can significantly limit the accuracy of the
+               reconstructions in many cases. In this work, we present a
+               physics-informed neural network (PINN) algorithm for
+               reconstructing plasma equilibrium using a multi-diagnostic
+               approach that includes magnetics, Thomson scattering, and
+               interferometer-polarimeter data. The PINN algorithm employs three
+               models for reconstruction: the first uses the type-I
+               approximation, the second uses the non-linear polarization
+               equation under the cold-plasma approximation, and the third uses
+               a comprehensive model that accounts for thermal effects, both
+               relativistic and non-relativistic (defined as the hot plasma
+               model). Parametric analyses conducted on synthetic cases
+               demonstrate that the hot plasma model consistently yields the
+               best results, while reconstructions using the type-I or cold
+               plasma approximations are prone to systematic errors in the
+               reconstructed plasma quantities. The PINN model has been tested
+               on ITER-like plasma configurations with noisy measurements,
+               showing that the inclusion of interferometer-polarimeter data
+               significantly improves accuracy, achieving around 99.9\%. Future
+               work aims to transfer the algorithm to existing experimental
+               nuclear fusion reactors and to integrate additional diagnostics
+               for further enhancing the reliability and accuracy of the
+               solutions.",
+  month     =  "30~" # jun,
+  year      =  2025,
+  url       = "https://dx.doi.org/10.1088/1361-6587/addde6",
+  file      = "All_Papers/plasma-physics-ml/Rutigliano_et_al._2025_-_Physics-informed_neural_networks_for_the_modell_..._r-polarimetry_in_tokamak_multi-diagnostic_equilibrium_reconstructions.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1088/1361-6587/addde6",
+  issn      = "0741-3335,1361-6587"
+}
+
+@ARTICLE{Lin2024-jz,
+  title     = "Prediction of plasma rotation velocity and ion temperature
+               profiles in {EAST} Tokamak using artificial neural network models",
+  author    = "Lin, Zichao and Zhang, Hongming and Wang, Fudi and Bae, Cheonho
+               and Fu, Jia and Shen, Yongcai and Dai, Shuyu and Jin, Yifei and
+               Lu, Dian and Fu, Shengyu and Ji, Huajian and Lyu, Bo",
+  journal   = "Nuclear fusion",
+  publisher = "IOP Publishing",
+  volume    =  64,
+  number    =  10,
+  pages     =  106061,
+  abstract  = "Abstract Artificial neural network models have been developed to
+               predict rotation velocity and ion temperature profiles on the
+               EAST tokamak based on spectral measurements from the x-ray
+               crystal spectrometer. Both Deep Neural Network (DNN) and
+               Convolutional Neural Network (CNN) models have been employed to
+               infer line-integrated ion temperatures. The predicted results
+               from these two models exhibit a strong correlation with the
+               target values, providing an opportunity for cross-validation to
+               enhance prediction accuracy. Notably, the computational speed of
+               these models has been significantly increased, surpassing
+               traditional methods by over tenfold. Furthermore, the
+               investigation of input data range and error prediction serves as
+               the foundation for future automated calculation process. Finally,
+               CNNs have also been employed to predict line-integrated rotation
+               velocity profiles and inverted ion temperature profiles for their
+               robustness in the training process. It is noted that these
+               algorithms are not restricted to any specific physics model and
+               can be readily adapted to various fusion devices.",
+  month     =  "1~" # oct,
+  year      =  2024,
+  url       = "https://dx.doi.org/10.1088/1741-4326/ad73e8",
+  file      = "All_Papers/plasma-physics-ml/Lin_et_al._2024_-_Prediction_of_plasma_rotation_velocity_and_ion_temperature_profiles_in_EAST_Tokamak_using_artificial_neural_network_models.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1088/1741-4326/ad73e8",
+  issn      = "0029-5515,1741-4326"
+}
+
+@MISC{Mehta2024-ix,
+  title     = "Sample-efficient reinforcement learning with applications in
+               nuclear fusion",
+  author    = "Mehta, Viraj",
+  publisher = "Carnegie Mellon University",
+  abstract  = "In many practical applications of reinforcement learning (RL), it
+               is expensive to observe state transitions from the environment.
+               In the problem of plasma control for nuclear fusion, the
+               motivating example of this thesis, determining the next state for
+               a given state-action pair requires querying an expensive
+               transition function which can lead to many hours of computer
+               simulation or dollars of scientific research. Such expensive data
+               collection prohibits application of standard RL algorithms which
+               usually require a large number of observations to learn. In this
+               thesis, I address the problem of efficiently learning a policy
+               from a relatively modest number of observations, motivated by the
+               application of automated decision making and control to nuclear
+               fusion. The first section presents four approaches developed to
+               evaluate the prospective value of data in learning a good policy
+               and discusses their performance, guarantees, and application.
+               These approaches address the problem through the lenses of
+               information theory, decision theory, the optimistic value gap,
+               and learning from comparative feedback. We apply this last method
+               to reinforcement learning from human feedback for the alignment
+               of large language models. The second presents work which uses
+               physical prior knowledge about the dynamics to more quickly learn
+               an accurate model. Finally, I give an introduction to the problem
+               setting of nuclear fusion, present recent work optimizing the
+               design of plasma current rampdowns at the DIII-Dtokamak, and
+               discuss future applications of AI in fusion",
+  month     =  "19~" # jan,
+  year      =  2024,
+  url       = "http://dx.doi.org/10.1184/R1/24944664.v1",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1184/R1/24944664.V1"
+}
+
+@ARTICLE{Rahman2024-xd,
+  title     = "Sparsified time-dependent Fourier neural operators for fusion
+               simulations",
+  author    = "Rahman, Mustafa Mutiur and Bai, Zhe and King, Jacob Robert and
+               Sovinec, Carl R and Wei, Xishuo and Williams, Samuel and Liu,
+               Yang",
+  journal   = "Physics of plasmas",
+  publisher = "AIP Publishing",
+  volume    =  31,
+  number    =  12,
+  pages     =  123902,
+  abstract  = "This paper presents a sparsified Fourier neural operator for
+               coupled time-dependent partial differential equations (ST-FNO) as
+               an efficient machine learning surrogate for fluid and
+               particle-based fusion codes such as NIMROD (Non-Ideal
+               Magnetohydrodynamics with Rotation - Open Discussion) and GTC
+               (Gyrokinetic Toroidal Code). ST-FNO leverages the structures in
+               the governing equations and utilizes neural operators to
+               represent Green's function-like numerical operators in the
+               corresponding numerical solvers. Once trained, ST-FNO can rapidly
+               and accurately predict dynamics in fusion devices compared with
+               first-principle numerical algorithms. In general, ST-FNO
+               represents an efficient and accurate machine learning surrogate
+               for numerical simulators for multi-variable nonlinear
+               time-dependent partial differential equations, with the proposed
+               architectures and loss functions. The efficacy of ST-FNO has been
+               demonstrated using quiescent H-mode simulation data from NIMROD
+               and kink-mode simulation data from GTC. The ST-FNO H-mode results
+               show orders of magnitude reduction in memory and central
+               processing unit usage in comparison with the numerical solvers in
+               NIMROD when computing fields over a selected poloidal plane. The
+               ST-FNO kink-mode results achieve a factor of 2 reduction in the
+               number of parameters compared to baseline FNO models without
+               accuracy loss.",
+  month     =  "1~" # dec,
+  year      =  2024,
+  url       = "https://doi.org/10.1063/5.0232503",
+  file      = "All_Papers/plasma-physics-ml/Rahman_et_al._2024_-_Sparsified_time-dependent_Fourier_neural_operators_for_fusion_simulations.pdf",
+  eprint    = "https://pubs.aip.org/aip/pop/article-pdf/doi/10.1063/5.0232503/20281563/123902\_1\_5.0232503.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1063/5.0232503",
+  issn      = "1070-664X,1089-7674",
+  language  = "en"
+}
+
+@ARTICLE{Pusztai2023-rv,
+  title     = "Bayesian optimization of massive material injection for
+               disruption mitigation in tokamaks",
+  author    = "Pusztai, I and Ekmark, I and Bergstr{\"{o}}m, H and Halldestam, P
+               and Jansson, P and Hoppe, M and Vallhagen, O and
+               F{\"{u}}l{\"{o}}p, T",
+  journal   = "Journal of plasma physics",
+  publisher = "Cambridge University Press (CUP)",
+  volume    =  89,
+  number    =  2,
+  pages     =  905890204,
+  abstract  = "A Bayesian optimization framework is used to investigate
+               scenarios for disruptions mitigated with combined deuterium and
+               neon injection in ITER. The optimization cost function takes into
+               account limits on the maximum runaway current, the transported
+               fraction of the heat loss and the current quench time. The aim is
+               to explore the dependence of the cost function on injected
+               densities, and provide insights into the behaviour of the
+               disruption dynamics for representative scenarios. The simulations
+               are conducted using the numerical framework Dream (Disruption
+               Runaway Electron Analysis Model). We show that, irrespective of
+               the quantities of the material deposition, multi-megaampere
+               runaway currents will be produced in the deuterium--tritium phase
+               of operations, even in the optimal scenarios. However, the
+               severity of the outcome can be influenced by tailoring the radial
+               profile of the injected material; in particular, if the injected
+               neon is deposited at the edge region it leads to a significant
+               reduction of both the final runaway current and the transported
+               heat losses. The Bayesian approach allows us to map the parameter
+               space efficiently, with more accuracy in favourable parameter
+               regions, thereby providing us with information about the
+               robustness of the optima.",
+  month     =  apr,
+  year      =  2023,
+  url       = "http://dx.doi.org/10.1017/S0022377823000193",
+  file      = "All_Papers/plasma-physics-ml/Pusztai_et_al._2023_-_Bayesian_optimization_of_massive_material_injection_for_disruption_mitigation_in_tokamaks.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1017/s0022377823000193",
+  issn      = "0022-3778,1469-7807",
+  language  = "en"
+}
+
+@ARTICLE{Zheng2023-bk,
+  title     = "Disruption prediction for future tokamaks using parameter-based
+               transfer learning",
+  author    = "Zheng, Wei and Xue, Fengming and Chen, Zhongyong and Chen, Dalong
+               and Guo, Bihao and Shen, Chengshuo and Ai, Xinkun and Wang,
+               Nengchao and Zhang, Ming and Ding, Yonghua and Chen, Zhipeng and
+               Yang, Zhoujun and Shen, Biao and Xiao, Bingjia and Pan, Yuan",
+  journal   = "Communications physics",
+  publisher = "Springer Science and Business Media LLC",
+  volume    =  6,
+  number    =  1,
+  pages     =  181,
+  abstract  = "AbstractTokamaks are the most promising way for nuclear fusion
+               reactors. Disruption in tokamaks is a violent event that
+               terminates a confined plasma and causes unacceptable damage to
+               the device. Machine learning models have been widely used to
+               predict incoming disruptions. However, future reactors, with much
+               higher stored energy, cannot provide enough unmitigated
+               disruption data at high performance to train the predictor before
+               damaging themselves. Here we apply a deep parameter-based
+               transfer learning method in disruption prediction. We train a
+               model on the J-TEXT tokamak and transfer it, with only 20
+               discharges, to EAST, which has a large difference in size,
+               operation regime, and configuration with respect to J-TEXT.
+               Results demonstrate that the transfer learning method reaches a
+               similar performance to the model trained directly with EAST using
+               about 1900 discharge. Our results suggest that the proposed
+               method can tackle the challenge in predicting disruptions for
+               future tokamaks like ITER with knowledge learned from existing
+               tokamaks.",
+  month     =  "17~" # jul,
+  year      =  2023,
+  url       = "https://doi.org/10.1038/s42005-023-01296-9",
+  file      = "All_Papers/plasma-physics-ml/Zheng_et_al._2023_-_Disruption_prediction_for_future_tokamaks_using_parameter-based_transfer_learning.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1038/s42005-023-01296-9",
+  issn      = "2399-3650",
+  language  = "en"
+}
+
+@ARTICLE{Joung2023-nk,
+  title    = "{GS}-{DeepNet}: mastering tokamak plasma equilibria with deep
+              neural networks and the Grad-Shafranov equation",
+  author   = "Joung, Semin and Ghim, Y-C and Kim, Jaewook and Kwak, Sehyun and
+              Kwon, Daeho and Sung, C and Kim, D and Kim, Hyun-Seok and Bak, J G
+              and Yoon, S W",
+  journal  = "Scientific reports",
+  volume   =  13,
+  number   =  1,
+  pages    =  15799,
+  abstract = "The force-balanced state of magnetically confined plasmas heated
+              up to 100 million degrees Celsius must be sustained long enough to
+              achieve a burning-plasma state, such as in the case of ITER, a
+              fusion reactor that promises a net energy gain. This force balance
+              between the Lorentz force and the pressure gradient force, known
+              as a plasma equilibrium, can be theoretically portrayed together
+              with Maxwell's equations as plasmas are collections of charged
+              particles. Nevertheless, identifying the plasma equilibrium in
+              real time is challenging owing to its free-boundary and ill-posed
+              conditions, which conventionally involves iterative numerical
+              approach with a certain degree of subjective human decisions such
+              as including or excluding certain magnetic measurements to achieve
+              numerical convergence on the solution as well as to avoid
+              unphysical solutions. Here, we introduce GS-DeepNet, which learns
+              plasma equilibria through solely unsupervised learning, without
+              using traditional numerical algorithms. GS-DeepNet includes two
+              neural networks and teaches itself. One neural network generates a
+              possible candidate of an equilibrium following Maxwell's equations
+              and is taught by the other network satisfying the force balance
+              under the equilibrium. Measurements constrain both networks. Our
+              GS-DeepNet achieves reliable equilibria with uncertainties in
+              contrast with existing methods, leading to possible better control
+              of fusion-grade plasmas.",
+  month    =  "22~" # sep,
+  year     =  2023,
+  url      = "https://doi.org/10.1038/s41598-023-42991-5",
+  file     = "All_Papers/plasma-physics-ml/Joung_et_al._2023_-_GS-DeepNet_-_mastering_tokamak_plasma_equilibria_with_deep_neural_networks_and_the_Grad-Shafranov_equation.pdf",
+  keywords = "plasma-physics-ml",
+  doi      = "10.1038/s41598-023-42991-5",
+  pmc      = "PMC10516960",
+  pmid     =  37737481,
+  issn     = "2045-2322",
+  language = "en"
+}
+
+@ARTICLE{Pavone2023-ht,
+  title     = "Machine learning and Bayesian inference in nuclear fusion
+               research: an overview",
+  author    = "Pavone, A and Merlo, A and Kwak, S and Svensson, J",
+  journal   = "Plasma physics and controlled fusion",
+  publisher = "IOP Publishing",
+  volume    =  65,
+  number    =  5,
+  pages     =  053001,
+  abstract  = "Abstract This article reviews applications of Bayesian inference
+               and machine learning (ML) in nuclear fusion research. Current and
+               next-generation nuclear fusion experiments require analysis and
+               modelling efforts that integrate different models consistently
+               and exploit information found across heterogeneous data sources
+               in an efficient manner. Model-based Bayesian inference provides a
+               framework well suited for the interpretation of observed data
+               given physics and probabilistic assumptions, also for very
+               complex systems, thanks to its rigorous and straightforward
+               treatment of uncertainties and modelling hypothesis. On the other
+               hand, ML, in particular neural networks and deep learning models,
+               are based on black-box statistical models and allow the handling
+               of large volumes of data and computation very efficiently. For
+               this reason, approaches which make use of ML and Bayesian
+               inference separately and also in conjunction are of particular
+               interest for today's experiments and are the main topic of this
+               review. This article also presents an approach where
+               physics-based Bayesian inference and black-box ML play along,
+               mitigating each other's drawbacks: the former is made more
+               efficient, the latter more interpretable.",
+  month     =  "1~" # may,
+  year      =  2023,
+  url       = "https://dx.doi.org/10.1088/1361-6587/acc60f",
+  file      = "All_Papers/plasma-physics-ml/Pavone_et_al._2023_-_Machine_learning_and_Bayesian_inference_in_nuclear_fusion_research_-_an_overview.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1088/1361-6587/acc60f",
+  issn      = "0741-3335,1361-6587"
+}
+
+@INPROCEEDINGS{Morosohk2022-us,
+  title     = "Estimation of the electron temperature profile in tokamaks using
+               analytical and neural network models",
+  author    = "Morosohk, Shira and Pajares, Andres and Schuster, Eugenio",
+  booktitle = "2022 American Control Conference (ACC)",
+  publisher = "IEEE",
+  pages     = "278--283",
+  abstract  = "Generating energy from nuclear fusion in a tokamak may highly
+               benefit from precise control of both kinetic and magnetic
+               spatially-varying properties of the plasma (hot ionized gas where
+               the fusion reactions take place). The spatial dependence of a
+               plasma property, from the core to the edge of the plasma, is
+               referred to as profile. Many control algorithms being developed
+               require accurate, real-time knowledge of the plasma
+               space-dependent state. However, many of the diagnostics used to
+               measure the plasma state provide data that can be noisy or
+               require significant post-processing. Within this context, an
+               observer has been developed using an extended Kalman filtering
+               approach for the electron temperature profile. The model employed
+               by the observer uses a combination of analytical components and
+               trained neural networks to generate as accurate of a prediction
+               as possible while working within real-time calculation
+               constraints. Such neural networks provide high accuracies, fast
+               calculation times, and wide applicability. In addition, with only
+               two diagnostic measurements at different spatial locations, the
+               observer is able to estimate the entire electron temperature
+               profile. Simulation results show that the observer can correctly
+               estimate this profile despite significant discrepancies in the
+               initial electron temperature profile and relatively high levels
+               of noise. After its implementation in the plasma control system
+               of the DIII-D tokamak, this observer may be able to provide
+               valuable information on the electron temperature to a variety of
+               present and future controllers.",
+  month     =  "8~" # jun,
+  year      =  2022,
+  url       = "http://dx.doi.org/10.23919/ACC53348.2022.9867844",
+  keywords  = "Temperature measurement;Computational modeling;Neural
+               networks;Observers;Plasma measurements;Tokamak devices;Real-time
+               systems;plasma-physics-ml",
+  doi       = "10.23919/acc53348.2022.9867844",
+  issn      = "2378-5861"
+}
+
+@ARTICLE{Szucs2021-er,
+  title     = "Detecting plasma detachment in the Wendelstein 7-{X} stellarator
+               using machine learning",
+  author    = "Sz\H{u}cs, M\'{a}t\'{e} and Szepesi, Tam\'{a}s and Biedermann,
+               Christoph and Cseh, G\'{a}bor and Jakubowski, Marcin and Kocsis,
+               G\'{a}bor and K{\"{o}}nig, Ralf and Krause, Marco and Perseo,
+               Valeria and Puig Sitjes, Aleix and {The Team W7-X}",
+  journal   = "Applied sciences (Basel, Switzerland)",
+  publisher = "MDPI AG",
+  volume    =  12,
+  number    =  1,
+  pages     =  269,
+  abstract  = "The detachment regime has a high potential to play an important
+               role in fusion devices on the road to a fusion power plant.
+               Complete power detachment has been observed several times during
+               the experimental campaigns of the Wendelstein 7-X (W7-X)
+               stellarator. Automatic observation and signaling of such events
+               could help scientists to better understand these phenomena. With
+               the growing discharge times in fusion devices, machine learning
+               models and algorithms are a powerful tool to process the
+               increasing amount of data. We investigate several classical
+               supervised machine learning models to detect complete power
+               detachment in the images captured by the Event Detection
+               Intelligent Camera System (EDICAM) at the W7-X at each given
+               image frame. In the dedicated detached state the plasma is stable
+               despite its reduced contact with the machine walls and the
+               radiation belt stays close to the separatrix, without exhibiting
+               significant heat load onto the divertor. To decrease
+               computational time and resources needed we propose certain pixel
+               intensity profiles (or intensity values along lines) as the input
+               to these models. After finding the profile that describes the
+               images best in terms of detachment, we choose the best performing
+               machine learning algorithm. It achieves an F1 score of 0.9836 on
+               the training dataset and 0.9335 on the test set. Furthermore, we
+               investigate its predictions in other scenarios, such as plasmas
+               with substantially decreased minor radius and several magnetic
+               configurations.",
+  month     =  "28~" # dec,
+  year      =  2021,
+  url       = "http://dx.doi.org/10.3390/app12010269",
+  file      = "All_Papers/plasma-physics-ml/Szűcs_et_al._2021_-_Detecting_plasma_detachment_in_the_Wendelstein_7-X_stellarator_using_machine_learning.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.3390/app12010269",
+  issn      = "2076-3417",
+  language  = "en"
+}
+
+@ARTICLE{Lee2016-iz,
+  title    = "Development of a neural network technique for {KSTAR} Thomson
+              scattering diagnostics",
+  author   = "Lee, Seung Hun and Lee, J H and Yamada, I and Park, Jae Sun",
+  journal  = "The Review of scientific instruments",
+  volume   =  87,
+  number   =  11,
+  pages    = "11E533",
+  abstract = "Neural networks provide powerful approaches of dealing with
+              nonlinear data and have been successfully applied to fusion plasma
+              diagnostics and control systems. Controlling tokamak plasmas in
+              real time is essential to measure the plasma parameters in situ.
+              However, the $\chi$2 method traditionally used in Thomson
+              scattering diagnostics hampers real-time measurement due to the
+              complexity of the calculations involved. In this study, we applied
+              a neural network approach to Thomson scattering diagnostics in
+              order to calculate the electron temperature, comparing the results
+              to those obtained with the $\chi$2 method. The best results were
+              obtained for 103 training cycles and eight nodes in the hidden
+              layer. Our neural network approach shows good agreement with the
+              $\chi$2 method and performs the calculation twenty times faster.",
+  month    =  nov,
+  year     =  2016,
+  url      = "https://doi.org/10.1063/1.4961079",
+  eprint   = "https://pubs.aip.org/aip/rsi/article-pdf/doi/10.1063/1.4961079/15616023/11e533\_1\_online.pdf",
+  keywords = "plasma-physics-ml",
+  doi      = "10.1063/1.4961079",
+  pmid     =  27910600,
+  issn     = "0034-6748,1089-7623",
+  language = "en"
+}
+
+@ARTICLE{van-de-Plassche2020-mu,
+  title     = "Fast modeling of turbulent transport in fusion plasmas using
+               neural networks",
+  author    = "van de Plassche, K L and Citrin, J and Bourdelle, C and Camenen,
+               Y and Casson, F J and Dagnelie, V I and Felici, F and Ho, A and
+               Van Mulders, S and {JET Contributors}",
+  journal   = "Physics of plasmas",
+  publisher = "AIP Publishing",
+  volume    =  27,
+  number    =  2,
+  pages     =  022310,
+  abstract  = "We present an ultrafast neural network model, QLKNN, which
+               predicts core tokamak transport heat and particle fluxes. QLKNN
+               is a surrogate model based on a database of 3 \texttimes{} 108
+               flux calculations of the quasilinear gyrokinetic transport model,
+               QuaLiKiz. The database covers a wide range of realistic tokamak
+               core parameters. Physical features such as the existence of a
+               critical gradient for the onset of turbulent transport were
+               integrated into the neural network training methodology. We have
+               coupled QLKNN to the tokamak modeling framework JINTRAC and rapid
+               control-oriented tokamak transport solver RAPTOR. The coupled
+               frameworks are demonstrated and validated through application to
+               three JET shots covering a representative spread of H-mode
+               operating space, predicting the turbulent transport of energy and
+               particles in the plasma core. JINTRAC--QLKNN and RAPTOR--QLKNN
+               are able to accurately reproduce JINTRAC--QuaLiKiz Ti,e and ne
+               profiles, but 3--5 orders of magnitude faster. Simulations which
+               take hours are reduced down to only a few tens of seconds. The
+               discrepancy in the final source-driven predicted profiles between
+               QLKNN and QuaLiKiz is on the order of 1\%--15\%. Also the dynamic
+               behavior was well captured by QLKNN, with differences of only
+               4\%--10\% compared to JINTRAC--QuaLiKiz observed at mid-radius,
+               for a study of density buildup following the L--H transition.
+               Deployment of neural network surrogate models in multi-physics
+               integrated tokamak modeling is a promising route toward enabling
+               accurate and fast tokamak scenario optimization, uncertainty
+               quantification, and control applications.",
+  month     =  "1~" # feb,
+  year      =  2020,
+  url       = "https://doi.org/10.1063/1.5134126",
+  file      = "All_Papers/plasma-physics-ml/van_de_Plassche_et_al._2020_-_Fast_modeling_of_turbulent_transport_in_fusion_plasmas_using_neural_networks.pdf",
+  eprint    = "https://pubs.aip.org/aip/pop/article-pdf/doi/10.1063/1.5134126/15772521/022310\_1\_online.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1063/1.5134126",
+  issn      = "1070-664X,1089-7674",
+  language  = "en"
+}
+
+@ARTICLE{Kates-Harbeck2019-iw,
+  title     = "Predicting disruptive instabilities in controlled fusion plasmas
+               through deep learning",
+  author    = "Kates-Harbeck, Julian and Svyatkovskiy, Alexey and Tang, William",
+  journal   = "Nature",
+  publisher = "Springer Science and Business Media LLC",
+  volume    =  568,
+  number    =  7753,
+  pages     = "526--531",
+  abstract  = "Nuclear fusion power delivered by magnetic-confinement tokamak
+               reactors holds the promise of sustainable and clean energy1. The
+               avoidance of large-scale plasma instabilities called disruptions
+               within these reactors2,3 is one of the most pressing
+               challenges4,5, because disruptions can halt power production and
+               damage key components. Disruptions are particularly harmful for
+               large burning-plasma systems such as the multibillion-dollar
+               International Thermonuclear Experimental Reactor (ITER) project6
+               currently under construction, which aims to be the first reactor
+               that produces more power from fusion than is injected to heat the
+               plasma. Here we present a method based on deep learning for
+               forecasting disruptions. Our method extends considerably the
+               capabilities of previous strategies such as
+               first-principles-based5 and classical machine-learning7-11
+               approaches. In particular, it delivers reliable predictions for
+               machines other than the one on which it was trained-a crucial
+               requirement for future large reactors that cannot afford training
+               disruptions. Our approach takes advantage of high-dimensional
+               training data to boost predictive performance while also engaging
+               supercomputing resources at the largest scale to improve accuracy
+               and speed. Trained on experimental data from the largest tokamaks
+               in the United States (DIII-D12) and the world (Joint European
+               Torus, JET13), our method can also be applied to specific tasks
+               such as prediction with long warning times: this opens up the
+               possibility of moving from passive disruption prediction to
+               active reactor control and optimization. These initial results
+               illustrate the potential for deep learning to accelerate progress
+               in fusion-energy science and, more generally, in the
+               understanding and prediction of complex physical systems.",
+  month     =  apr,
+  year      =  2019,
+  url       = "https://doi.org/10.1038/s41586-019-1116-4",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1038/s41586-019-1116-4",
+  pmid      =  30996348,
+  issn      = "0028-0836,1476-4687",
+  language  = "en"
+}
+
+@ARTICLE{Joung2024-bq,
+  title     = "Tokamak edge localized mode onset prediction with deep neural
+               network and pedestal turbulence",
+  author    = "Joung, Semin and Smith, David R and McKee, G and Yan, Z and Gill,
+               K and Zimmerman, J and Geiger, B and Coffee, R and O'Shea, F H
+               and Jalalvand, A and Kolemen, E",
+  journal   = "Nuclear fusion",
+  publisher = "IOP Publishing",
+  volume    =  64,
+  number    =  6,
+  pages     =  066038,
+  abstract  = "Abstract A neural network, BES-ELMnet, predicting a
+               quasi-periodic disruptive eruption of the plasma energy and
+               particles known as edge localized mode (ELM) onset is developed
+               with observed pedestal turbulence from the beam emission
+               spectroscopy system in DIII-D. BES-ELMnet has convolutional and
+               fully-connected layers, taking two-dimensional plasma
+               fluctuations with a temporal window of size 128 $\mathrm{\mu}$s
+               and generating a scalar output which can be interpreted as a
+               probability of the upcoming ELM onset. As approximately labeled
+               inter-ELM broadband ( 15 kHz $\leqslant{}$ f $\leqslant{}$ 150
+               kHz ) fluctuations are given to the network, BES-ELMnet learns by
+               itself ELM-related precursors arising before the onsets through
+               supervised learning scheme. BES-ELMnet achieves the gradually
+               increasing ELM onset probabilities between two consecutive ELMs
+               during the inter-ELM phases and can forecast the first ELM onsets
+               which occur after the high confinement mode transition. We
+               further investigate the network generality in terms of the
+               selected frequency band to ensure the use of BES-ELMnet for
+               various operation regimes without changing the trained
+               architecture. Therefore, our novel prediction method will enhance
+               a proactive high confinement mode control of fusion-grade
+               plasmas.",
+  month     =  "1~" # jun,
+  year      =  2024,
+  url       = "https://dx.doi.org/10.1088/1741-4326/ad43fb",
+  file      = "All_Papers/plasma-physics-ml/Joung_et_al._2024_-_Tokamak_edge_localized_mode_onset_prediction_with_deep_neural_network_and_pedestal_turbulence.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1088/1741-4326/ad43fb",
+  issn      = "0029-5515,1741-4326"
+}
+
+@ARTICLE{Hansen2023-gd,
+  title         = "{TokaMaker}: An open-source time-dependent Grad-Shafranov
+                   tool for the design and modeling of axisymmetric fusion
+                   devices",
+  author        = "Hansen, C and Stewart, I G and Burgess, D and Pharr, M and
+                   Guizzo, S and Logak, F and Nelson, A O and Paz-Soldan, C",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "In this paper, we present a new static and time-dependent
+                   MagnetoHydroDynamic (MHD) equilibrium code, TokaMaker, for
+                   axisymmetric configurations of magnetized plasmas, based on
+                   the well-known Grad-Shafranov equation. This code utilizes
+                   finite element methods on an unstructured triangular grid to
+                   enable capturing accurate machine geometry and simple mesh
+                   generation from engineering-like descriptions of present and
+                   future devices. The new code is designed for ease of use
+                   without sacrificing capability and speed through a
+                   combination of Python, Fortran, and C/C++ components. A
+                   detailed description of the numerical methods of the code,
+                   including a novel formulation of the boundary conditions for
+                   free-boundary equilibria, and validation of the
+                   implementation of those methods using both analytic test
+                   cases and cross-code validation is shown. Results show
+                   expected convergence across tested polynomial orders for
+                   analytic and cross-code test cases.",
+  month         =  "13~" # nov,
+  year          =  2023,
+  url           = "http://dx.doi.org/10.1016/j.cpc.2024.109111",
+  file          = "All_Papers/plasma-physics-ml/Hansen_et_al._2023_-_TokaMaker_-_An_open-source_time-dependent_Grad-Shafranov_tool_for_the_design_and_modeling_of_axisymmetric_fusion_devices.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2311.07719",
+  keywords      = "plasma-physics-ml",
+  doi           = "10.1016/j.cpc.2024.109111"
+}
+
+@ARTICLE{Ferreira2018-bz,
+  title         = "Applications of deep learning to nuclear fusion research",
+  author        = "Ferreira, Diogo R",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Nuclear fusion is the process that powers the sun, and it is
+                   one of the best hopes to achieve a virtually unlimited energy
+                   source for the future of humanity. However, reproducing
+                   sustainable nuclear fusion reactions here on Earth is a
+                   tremendous scientific and technical challenge. Special
+                   devices -- called tokamaks -- have been built around the
+                   world, with JET (Joint European Torus, in the UK) being the
+                   largest tokamak currently in operation. Such devices confine
+                   matter and heat it up to extremely high temperatures,
+                   creating a plasma where fusion reactions begin to occur. JET
+                   has over one hundred diagnostic systems to monitor what
+                   happens inside the plasma, and each 30-second experiment (or
+                   pulse) generates about 50 GB of data. In this work, we show
+                   how convolutional neural networks (CNNs) can be used to
+                   reconstruct the 2D plasma profile inside the device based on
+                   data coming from those diagnostics. We also discuss how
+                   recurrent neural networks (RNNs) can be used to predict
+                   plasma disruptions, which are one of the major problems
+                   affecting tokamaks today. Training of such networks is done
+                   on NVIDIA GPUs.",
+  month         =  "1~" # nov,
+  year          =  2018,
+  url           = "http://arxiv.org/abs/1811.00333",
+  file          = "All_Papers/plasma-physics-ml/Ferreira_2018_-_Applications_of_deep_learning_to_nuclear_fusion_research.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "1811.00333",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Wai2022-nu,
+  title         = "Neural net modeling of equilibria in {NSTX-U}",
+  author        = "Wai, J T and Boyer, M D and Kolemen, E",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Neural networks (NNs) offer a path towards synthesizing and
+                   interpreting data on faster timescales than traditional
+                   physics-informed computational models. In this work we
+                   develop two neural networks relevant to equilibrium and shape
+                   control modeling, which are part of a suite of tools being
+                   developed for the National Spherical Torus Experiment-Upgrade
+                   (NSTX-U) for fast prediction, optimization, and visualization
+                   of plasma scenarios. The networks include Eqnet, a
+                   free-boundary equilibrium solver trained on the EFIT01
+                   reconstruction algorithm, and Pertnet, which is trained on
+                   the Gspert code and predicts the non-rigid plasma response, a
+                   nonlinear term that arises in shape control modeling. The NNs
+                   are trained with different combinations of inputs and outputs
+                   in order to offer flexibility in use cases. In particular,
+                   Eqnet can use magnetic diagnostics as inputs and act as an
+                   EFIT-like reconstruction algorithm, or, by using pressure and
+                   current profile information the NN can act as a forward
+                   Grad-Shafranov equilibrium solver. This forward-mode version
+                   is envisioned to be implemented in the suite of tools for
+                   simulation of plasma scenarios. The reconstruction-mode
+                   version gives some performance improvements compared to the
+                   online reconstruction code real-time EFIT (RTEFIT),
+                   especially when vessel eddy currents are significant. We
+                   report strong performance for all NNs indicating that the
+                   models could reliably be used within closed-loop simulations
+                   or other applications. Some limitations are discussed.",
+  month         =  "28~" # feb,
+  year          =  2022,
+  url           = "http://arxiv.org/abs/2202.13915",
+  file          = "All_Papers/plasma-physics-ml/Wai_et_al._2022_-_Neural_net_modeling_of_equilibria_in_NSTX-U.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2202.13915",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Tracey2023-qu,
+  title         = "Towards practical reinforcement learning for tokamak magnetic
+                   control",
+  author        = "Tracey, Brendan D and Michi, Andrea and Chervonyi, Yuri and
+                   Davies, Ian and Paduraru, Cosmin and Lazic, Nevena and
+                   Felici, Federico and Ewalds, Timo and Donner, Craig and
+                   Galperti, Cristian and Buchli, Jonas and Neunert, Michael and
+                   Huber, Andrea and Evens, Jonathan and Kurylowicz, Paula and
+                   Mankowitz, Daniel J and Riedmiller, Martin and {The TCV Team}",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Reinforcement learning (RL) has shown promising results for
+                   real-time control systems, including the domain of plasma
+                   magnetic control. However, there are still significant
+                   drawbacks compared to traditional feedback control approaches
+                   for magnetic confinement. In this work, we address key
+                   drawbacks of the RL method; achieving higher control accuracy
+                   for desired plasma properties, reducing the steady-state
+                   error, and decreasing the required time to learn new tasks.
+                   We build on top of \cite{degrave2022magnetic}, and present
+                   algorithmic improvements to the agent architecture and
+                   training procedure. We present simulation results that show
+                   up to 65\% improvement in shape accuracy, achieve substantial
+                   reduction in the long-term bias of the plasma current, and
+                   additionally reduce the training time required to learn new
+                   tasks by a factor of 3 or more. We present new experiments
+                   using the upgraded RL-based controllers on the TCV tokamak,
+                   which validate the simulation results achieved, and point the
+                   way towards routinely achieving accurate discharges using the
+                   RL approach.",
+  month         =  "21~" # jul,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2307.11546",
+  file          = "All_Papers/plasma-physics-ml/Tracey_et_al._2023_-_Towards_practical_reinforcement_learning_for_tokamak_magnetic_control.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2307.11546",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Greif2023-jj,
+  title         = "Physics-preserving {AI-accelerated} simulations of plasma
+                   turbulence",
+  author        = "Greif, Robin and Jenko, Frank and Thuerey, Nils",
+  journal       = "arXiv [physics.comp-ph]",
+  abstract      = "Turbulence in fluids, gases, and plasmas remains an open
+                   problem of both practical and fundamental importance. Its
+                   irreducible complexity usually cannot be tackled
+                   computationally in a brute-force style. Here, we combine
+                   Large Eddy Simulation (LES) techniques with Machine Learning
+                   (ML) to retain only the largest dynamics explicitly, while
+                   small-scale dynamics are described by an ML-based
+                   sub-grid-scale model. Applying this novel approach to
+                   self-driven plasma turbulence allows us to remove large parts
+                   of the inertial range, reducing the computational effort by
+                   about three orders of magnitude, while retaining the
+                   statistical physical properties of the turbulent system.",
+  month         =  "28~" # sep,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2309.16400",
+  file          = "All_Papers/plasma-physics-ml/Greif_et_al._2023_-_Physics-preserving_AI-accelerated_simulations_of_plasma_turbulence.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.comp-ph",
+  eprint        = "2309.16400",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Wang2023-ww,
+  title         = "Hybridizing physics and neural {ODEs} for predicting plasma
+                   inductance dynamics in tokamak fusion reactors",
+  author        = "Wang, Allen M and Garnier, Darren T and Rea, Cristina",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "While fusion reactors known as tokamaks hold promise as a
+                   firm energy source, advances in plasma control, and handling
+                   of events where control of plasmas is lost, are needed for
+                   them to be economical. A significant bottleneck towards
+                   applying more advanced control algorithms is the need for
+                   better plasma simulation, where both physics-based and
+                   data-driven approaches currently fall short. The former is
+                   bottle-necked by both computational cost and the difficulty
+                   of modelling plasmas, and the latter is bottle-necked by the
+                   relative paucity of data. To address this issue, this work
+                   applies the neural ordinary differential equations (ODE)
+                   framework to the problem of predicting a subset of plasma
+                   dynamics, namely the coupled plasma current and internal
+                   inductance dynamics. As the neural ODE framework allows for
+                   the natural inclusion of physics-based inductive biases, we
+                   train both physics-based and neural network models on data
+                   from the Alcator C-Mod fusion reactor and find that a model
+                   that combines physics-based equations with a neural ODE
+                   performs better than both existing physics-motivated ODEs and
+                   a pure neural ODE model.",
+  month         =  "30~" # oct,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2310.20079",
+  file          = "All_Papers/plasma-physics-ml/Wang_et_al._2023_-_Hybridizing_physics_and_neural_ODEs_for_predicting_plasma_inductance_dynamics_in_tokamak_fusion_reactors.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2310.20079",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Gopakumar2023-jn,
+  title         = "Fourier Neural Operator for Plasma Modelling",
+  author        = "Gopakumar, Vignesh and Pamela, Stanislas and Zanisi, Lorenzo
+                   and Li, Zongyi and Anandkumar, Anima and {MAST Team}",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Predicting plasma evolution within a Tokamak is crucial to
+                   building a sustainable fusion reactor. Whether in the
+                   simulation space or within the experimental domain, the
+                   capability to forecast the spatio-temporal evolution of
+                   plasma field variables rapidly and accurately could improve
+                   active control methods on current tokamak devices and future
+                   fusion reactors. In this work, we demonstrate the utility of
+                   using Fourier Neural Operator (FNO) to model the plasma
+                   evolution in simulations and experiments. Our work shows that
+                   the FNO is capable of predicting magnetohydrodynamic models
+                   governing the plasma dynamics, 6 orders of magnitude faster
+                   than the traditional numerical solver, while maintaining
+                   considerable accuracy (NMSE $\sim 10^{-5})$. Our work also
+                   benchmarks the performance of the FNO against other standard
+                   surrogate models such as Conv-LSTM and U-Net and demonstrate
+                   that the FNO takes significantly less time to train, requires
+                   less parameters and outperforms other models. We extend the
+                   FNO approach to model the plasma evolution observed by the
+                   cameras positioned within the MAST spherical tokamak. We
+                   illustrate its capability in forecasting the formation of
+                   filaments within the plasma as well as the heat deposits. The
+                   FNO deployed to model the camera is capable of forecasting
+                   the full length of the plasma shot within half the time of
+                   the shot duration.",
+  month         =  "13~" # feb,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2302.06542",
+  file          = "All_Papers/plasma-physics-ml/Gopakumar_et_al._2023_-_Fourier_Neural_Operator_for_Plasma_Modelling.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2302.06542",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Faraji2024-mc,
+  title         = "Machine learning applications to computational plasma physics
+                   and reduced-order plasma modeling: A Perspective",
+  author        = "Faraji, Farbod and Reza, Maryam",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Machine learning (ML) provides a broad spectrum of tools and
+                   architectures that enable the transformation of data from
+                   simulations and experiments into useful and explainable
+                   science, thereby augmenting domain knowledge. Furthermore,
+                   ML-enhanced numerical modelling can revamp scientific
+                   computing for real-world complex engineering systems,
+                   creating unique opportunities to examine the operation of the
+                   technologies in detail and automate their optimization and
+                   control. In recent years, ML applications have seen
+                   significant growth across various scientific domains,
+                   particularly in fluid mechanics, where ML has shown great
+                   promise in enhancing computational modeling of fluid flows.
+                   In contrast, ML applications in numerical plasma physics
+                   research remain relatively limited in scope and extent.
+                   Despite this, the close relationship between fluid mechanics
+                   and plasma physics presents a valuable opportunity to create
+                   a roadmap for transferring ML advances in fluid flow modeling
+                   to computational plasma physics. This Perspective aims to
+                   outline such a roadmap. We begin by discussing some general
+                   fundamental aspects of ML, including the various categories
+                   of ML algorithms and the different types of problems that can
+                   be solved with the help of ML. With regard to each problem
+                   type, we then present specific examples from the use of ML in
+                   computational fluid dynamics, reviewing several insightful
+                   prior efforts. We also review recent ML applications in
+                   plasma physics for each problem type. The paper discusses
+                   promising future directions and development pathways for ML
+                   in plasma modelling within the different application areas.
+                   Additionally, we point out prominent challenges that must be
+                   addressed to realize ML's full potential in computational
+                   plasma physics, including the need for cost-effective
+                   high-fidelity simulation tools for extensive data generation.",
+  month         =  "3~" # sep,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2409.02349",
+  file          = "All_Papers/plasma-physics-ml/Faraji_and_Reza_2024_-_Machine_learning_applications_to_computational_plasma_physics_and_reduced-order_plasma_modeling_-_A_Perspective.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2409.02349",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Wu2024-qe,
+  title         = "High-fidelity data-driven dynamics model for reinforcement
+                   learning-based magnetic control in {HL-3} tokamak",
+  author        = "Wu, Niannian and Yang, Zongyu and Li, Rongpeng and Wei, Ning
+                   and Chen, Yihang and Dong, Qianyun and Li, Jiyuan and Zheng,
+                   Guohui and Gong, Xinwen and Gao, Feng and Li, Bo and Xu, Min
+                   and Zhao, Zhifeng and Zhong, Wulyu",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "The drive to control tokamaks, a prominent technology in
+                   nuclear fusion, is essential due to its potential to provide
+                   a virtually unlimited source of clean energy. Reinforcement
+                   learning (RL) promises improved flexibility to manage the
+                   intricate and non-linear dynamics of the plasma encapsulated
+                   in a tokamak. However, RL typically requires substantial
+                   interaction with a simulator capable of accurately evolving
+                   the high-dimensional plasma state. Compared to
+                   first-principle-based simulators, whose intense computations
+                   lead to sluggish RL training, we devise an effective method
+                   to acquire a fully data-driven simulator, by mitigating the
+                   arising compounding error issue due to the underlying
+                   autoregressive nature. With high accuracy and appealing
+                   extrapolation capability, this high-fidelity dynamics model
+                   subsequently enables the rapid training of a qualified RL
+                   agent to directly generate engineering-reasonable magnetic
+                   coil commands, aiming at the desired long-term targets of
+                   plasma current and last closed flux surface. Together with a
+                   surrogate magnetic equilibrium reconstruction model EFITNN,
+                   the RL agent successfully maintains a $100$-ms, $1$ kHz
+                   trajectory control with accurate waveform tracking on the
+                   HL-3 tokamak. Furthermore, it also demonstrates the
+                   feasibility of zero-shot adaptation to changed triangularity
+                   targets, confirming the robustness of the developed
+                   data-driven dynamics model. Our work underscores the
+                   advantage of fully data-driven dynamics models in yielding
+                   RL-based trajectory control policies at a sufficiently fast
+                   pace, an anticipated engineering requirement in daily
+                   discharge practices for the upcoming ITER device.",
+  month         =  "13~" # sep,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2409.09238",
+  file          = "All_Papers/plasma-physics-ml/Wu_et_al._2024_-_High-fidelity_data-driven_dynamics_model_for_reinforcement_learning-based_magnetic_control_in_HL-3_tokamak.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2409.09238",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Citrin2024-si,
+  title         = "{TORAX}: A Fast and Differentiable Tokamak Transport
+                   Simulator in {JAX}",
+  author        = "Citrin, Jonathan and Goodfellow, Ian and Raju, Akhil and
+                   Chen, Jeremy and Degrave, Jonas and Donner, Craig and Felici,
+                   Federico and Hamel, Philippe and Huber, Andrea and Nikulin,
+                   Dmitry and Pfau, David and Tracey, Brendan and Riedmiller,
+                   Martin and Kohli, Pushmeet",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "We present TORAX, a new, open-source, differentiable tokamak
+                   core transport simulator implemented in Python using the JAX
+                   framework. TORAX solves the coupled equations for ion heat
+                   transport, electron heat transport, particle transport, and
+                   current diffusion, incorporating modular physics-based and ML
+                   models. JAX's just-in-time compilation ensures fast runtimes,
+                   while its automatic differentiation capability enables
+                   gradient-based optimization workflows and simplifies the use
+                   of Jacobian-based PDE solvers. Coupling to ML-surrogates of
+                   physics models is greatly facilitated by JAX's intrinsic
+                   support for neural network development and inference. TORAX
+                   is verified against the established RAPTOR code,
+                   demonstrating agreement in simulated plasma profiles. TORAX
+                   provides a powerful and versatile tool for accelerating
+                   research in tokamak scenario modeling, pulse design, and
+                   control.",
+  month         =  "10~" # jun,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2406.06718",
+  file          = "All_Papers/plasma-physics-ml/Citrin_et_al._2024_-_TORAX_-_A_Fast_and_Differentiable_Tokamak_Transport_Simulator_in_JAX.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2406.06718",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Chayapathy2024-fz,
+  title         = "Time series viewmakers for robust disruption prediction",
+  author        = "Chayapathy, Dhruva and Siebert, Tavis and Spangher, Lucas and
+                   Moharir, Akshata Kishore and Patil, Om Manoj and Rea,
+                   Cristina",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Machine Learning guided data augmentation may support the
+                   development of technologies in the physical sciences, such as
+                   nuclear fusion tokamaks. Here we endeavor to study the
+                   problem of detecting disruptions i.e. plasma instabilities
+                   that can cause significant damages, impairing the reliability
+                   and efficiency required for their real world viability.
+                   Machine learning (ML) prediction models have shown promise in
+                   detecting disruptions for specific tokamaks, but they often
+                   struggle in generalizing to the diverse characteristics and
+                   dynamics of different machines. This limits the effectiveness
+                   of ML models across different tokamak designs and operating
+                   conditions, which is a critical barrier to scaling fusion
+                   technology. Given the success of data augmentation in
+                   improving model robustness and generalizability in other
+                   fields, this study explores the use of a novel time series
+                   viewmaker network to generate diverse augmentations or
+                   ``views'' of training data. Our results show that
+                   incorporating views during training improves AUC and F2
+                   scores on DisruptionBench tasks compared to standard or no
+                   augmentations. This approach represents a promising step
+                   towards developing more broadly applicable ML models for
+                   disruption avoidance, which is essential for advancing fusion
+                   technology and, ultimately, addressing climate change through
+                   reliable and sustainable energy production.",
+  month         =  "14~" # oct,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2410.11065",
+  file          = "All_Papers/plasma-physics-ml/Chayapathy_et_al._2024_-_Time_series_viewmakers_for_robust_disruption_prediction.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2410.11065",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Pamela2024-yx,
+  title         = "{Neural-Parareal}: Dynamically training neural operators as
+                   coarse solvers for time-parallelisation of fusion {MHD}
+                   simulations",
+  author        = "Pamela, S J P and Carey, N and Brandstetter, J and Akers, R
+                   and Zanisi, L and Buchanan, J and Gopakumar, V and Hoelzl, M
+                   and Huijsmans, G and Pentland, K and James, T and Antonucci,
+                   G and {the JOREK Team}",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "The fusion research facility ITER is currently being
+                   assembled to demonstrate that fusion can be used for
+                   industrial energy production, while several other programmes
+                   across the world are also moving forward, such as EU-DEMO,
+                   CFETR, SPARC and STEP. The high engineering complexity of a
+                   tokamak makes it an extremely challenging device to optimise,
+                   and test-based optimisation would be too slow and too costly.
+                   Instead, digital design and optimisation must be favored,
+                   which requires strongly-coupled suites of High-Performance
+                   Computing calculations. In this context, having surrogate
+                   models to provide quick estimates with uncertainty
+                   quantification is essential to explore and optimise new
+                   design options. Furthermore, these surrogates can in turn be
+                   used to accelerate simulations in the first place. This is
+                   the case of Parareal, a time-parallelisation method that can
+                   speed-up large HPC simulations, where the coarse-solver can
+                   be replaced by a surrogate. A novel framework,
+                   Neural-Parareal, is developed to integrate the training of
+                   neural operators dynamically as more data becomes available.
+                   For a given input-parameter domain, as more simulations are
+                   being run with Parareal, the large amount of data generated
+                   by the algorithm is used to train new surrogate models to be
+                   used as coarse-solvers for future Parareal simulations,
+                   leading to progressively more accurate coarse-solvers, and
+                   thus higher speed-up. It is found that such neural network
+                   surrogates can be much more effective than traditional
+                   coarse-solver in providing a speed-up with Parareal. This
+                   study is a demonstration of the convergence of HPC and AI
+                   which simply has to become common practice in the world of
+                   digital engineering design.",
+  month         =  "2~" # may,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2405.01355",
+  file          = "All_Papers/plasma-physics-ml/Pamela_et_al._2024_-_Neural-Parareal_-_Dynamically_training_neural_operators_as_coarse_solvers_for_time-parallelisation_of_fusion_MHD_simulations.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2405.01355",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Char2024-vf,
+  title         = "Full shot predictions for the {DIII-D} tokamak via deep
+                   recurrent networks",
+  author        = "Char, Ian and Chung, Youngseog and Abbate, Joseph and
+                   Kolemen, Egemen and Schneider, Jeff",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Although tokamaks are one of the most promising devices for
+                   realizing nuclear fusion as an energy source, there are still
+                   key obstacles when it comes to understanding the dynamics of
+                   the plasma and controlling it. As such, it is crucial that
+                   high quality models are developed to assist in overcoming
+                   these obstacles. In this work, we take an entirely data
+                   driven approach to learn such a model. In particular, we use
+                   historical data from the DIII-D tokamak to train a deep
+                   recurrent network that is able to predict the full time
+                   evolution of plasma discharges (or ``shots''). Following
+                   this, we investigate how different training and inference
+                   procedures affect the quality and calibration of the shot
+                   predictions.",
+  month         =  "17~" # apr,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2404.12416",
+  file          = "All_Papers/plasma-physics-ml/Char_et_al._2024_-_Full_shot_predictions_for_the_DIII-D_tokamak_via_deep_recurrent_networks.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2404.12416",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Spangher2023-rv,
+  title         = "Autoregressive transformers for disruption prediction in
+                   nuclear fusion plasmas",
+  author        = "Spangher, Lucas and Arnold, William and Spangher, Alexander
+                   and Maris, Andrew and Rea, Cristina",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "The physical sciences require models tailored to specific
+                   nuances of different dynamics. In this work, we study outcome
+                   predictions in nuclear fusion tokamaks, where a major
+                   challenge are \textit{disruptions}, or the loss of plasma
+                   stability with damaging implications for the tokamak.
+                   Although disruptions are difficult to model using physical
+                   simulations, machine learning (ML) models have shown promise
+                   in predicting these phenomena. Here, we first study several
+                   variations on masked autoregressive transformers, achieving
+                   an average of 5\% increase in Area Under the Receiving
+                   Operating Characteristic metric above existing methods. We
+                   then compare transformer models to limited context neural
+                   networks in order to shed light on the ``memory'' of plasma
+                   effected by tokamaks controls. With these model comparisons,
+                   we argue for the persistence of a memory throughout the
+                   plasma \textit{in the context of tokamaks} that our model
+                   exploits.",
+  month         =  "29~" # dec,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2401.00051",
+  file          = "All_Papers/plasma-physics-ml/Spangher_et_al._2023_-_Autoregressive_transformers_for_disruption_prediction_in_nuclear_fusion_plasmas.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2401.00051",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Pyragius2024-on,
+  title         = "Application of interpretable machine learning for
+                   cross-diagnostic inference on the {ST40} spherical tokamak",
+  author        = "Pyragius, Tadas and Colgan, Cary and Lowe, Hazel and Janky,
+                   Filip and Fontana, Matteo and Cai, Yichen and Naylor, Graham",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Machine learning models are exceptionally effective in
+                   capturing complex non-linear relationships of
+                   high-dimensional datasets and making accurate predictions.
+                   However, their intrinsic ``black-box'' nature makes it
+                   difficult to interpret them or guarantee ``safe behavior''
+                   when deployed in high-risk applications such as feedback
+                   control, healthcare and finance. This drawback acts as a
+                   significant barrier to their wider application across many
+                   scientific and industrial domains where the interpretability
+                   of the model predictions is as important as accuracy.
+                   Leveraging the latest developments in interpretable machine
+                   learning, we develop a method to parameterise ``black-box''
+                   models, effectively transforming them into ``grey-box''
+                   models. We apply this approach to plasma diagnostics by
+                   creating a parameterised synthetic Soft X-Ray imaging $-$
+                   Thomson Scattering diagnostic, which predicts high temporal
+                   resolution electron temperature and density profiles from the
+                   measured soft X-ray emission. The ``grey-box'' model
+                   predictions are benchmarked against the trained ``black-box''
+                   models as well as a diverse range of plasma conditions. Our
+                   model-agnostic approach can be applied to various machine
+                   learning architectures, enabling direct comparisons of model
+                   interpretations.",
+  month         =  "26~" # jul,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2407.18741",
+  file          = "All_Papers/plasma-physics-ml/Pyragius_et_al._2024_-_Application_of_interpretable_machine_learning_for_cross-diagnostic_inference_on_the_ST40_spherical_tokamak.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2407.18741",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Saltzman2025-ek,
+  title         = "Impact of model uncertainty on {SPARC} operating scenario
+                   predictions with empirical modeling",
+  author        = "Saltzman, A and Rodriguez-Fernandez, P and Body, T and Ho, A
+                   and Howard, N T",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Understanding and accounting for uncertainty helps to ensure
+                   next-step tokamaks such as SPARC will robustly achieve their
+                   goals. While traditional Plasma OPerating CONtour (POPCON)
+                   analyses guide design, they often overlook the significant
+                   impact of uncertainties in scaling laws, plasma profiles, and
+                   impurity concentrations on performance predictions. This work
+                   confronts these challenges by introducing statistical
+                   POPCONs, which leverage Monte Carlo analysis to quantify the
+                   sensitivity of SPARC's operating points [1] to these crucial
+                   variables. For profiles, a physically motivated
+                   gradient-based functional form is introduced. We further
+                   develop a multi-fidelity Bayesian optimization workflow that
+                   effectively identifies operating points maximizing the
+                   probability of meeting performance goals, which gives a
+                   significant speed-up over brute force methods. Our findings
+                   reveal that accounting for these uncertainties leads to an
+                   optimal operating point different from deterministic
+                   predictions, which balances H-mode access, confinement,
+                   impurity dilution, and auxiliary power.",
+  month         =  "11~" # jun,
+  year          =  2025,
+  url           = "http://arxiv.org/abs/2506.09879",
+  file          = "All_Papers/plasma-physics-ml/Saltzman_et_al._2025_-_Impact_of_model_uncertainty_on_SPARC_operating_scenario_predictions_with_empirical_modeling.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2506.09879",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Subbotin2025-jo,
+  title         = "Reconstruction-free magnetic control of {DIII-D} plasma with
+                   deep reinforcement learning",
+  author        = "Subbotin, G F and Sorokin, D I and Nurgaliev, M R and
+                   Granovskiy, A A and Kharitonov, I P and Adishchev, E V and
+                   Khairutdinov, E N and Clark, R and Shen, H and Choi, W and
+                   Barr, J and Orlov, D M",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "Precise control of plasma shape and position is essential for
+                   stable tokamak operation and achieving commercial fusion
+                   energy. Traditional control methods rely on equilibrium
+                   reconstruction and linearized models, limiting adaptability
+                   and real-time performance. Here,the first application of deep
+                   reinforcement learning (RL) for magnetic plasma control on
+                   the mid-size DIII-D tokamak is presented, demonstrating a
+                   nonlinear approach that improves robustness and flexibility
+                   across plasma scenarios. Using the Soft Actor-Critic
+                   algorithm, this method eliminates the need for equilibrium
+                   reconstruction, enabling high-speed control execution and
+                   scalability on larger fusion devices. NSFsim, a 2D
+                   Grad-Shafranov equilibration solver with a circuit equation
+                   and a 1D transport solver, is used to train the agent. Its
+                   capability of reproducing the kinetic parameter evolution
+                   alongside magnetic equilibria evolution appears to be an
+                   essential factor significantly affecting control quality.
+                   RL-based controllers demonstrated robust magnetic control in
+                   experimental application at DIII-D, preserving control
+                   performance in transient events during plasma discharges, and
+                   reaching target parameters from the first discharge without
+                   additional tuning or modifications. The approach itself has
+                   significant generalization potential across devices and
+                   targets. This work represents a step toward AI-driven,
+                   real-time plasma control, advancing the feasibility of
+                   next-generation fusion reactors.",
+  month         =  "16~" # jun,
+  year          =  2025,
+  url           = "http://arxiv.org/abs/2506.13267",
+  file          = "All_Papers/plasma-physics-ml/Subbotin_et_al._2025_-_Reconstruction-free_magnetic_control_of_DIII-D_plasma_with_deep_reinforcement_learning.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2506.13267",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Stokolesov2025-ut,
+  title         = "Reconstructing the plasma boundary with a reduced set of
+                   diagnostics",
+  author        = "Stokolesov, M S and Nurgaliev, M R and Kharitonov, I P and
+                   Adishchev, E V and Sorokin, D I and Clark, R and Orlov, D M",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "This study investigates the feasibility of reconstructing the
+                   last closed flux surface (LCFS) in the DIII-D tokamak using
+                   neural network models trained on reduced input feature sets,
+                   addressing an ill-posed task. Two models are compared: one
+                   trained solely on coil currents and another incorporating
+                   coil currents, plasma current, and loop voltage. The model
+                   trained exclusively on coil currents achieved a mean point
+                   displacement of 0.04 m on a held-out test set, while the
+                   inclusion of plasma current and loop voltage reduced the
+                   error to 0.03 m. This comparison highlights the trade-offs
+                   between input feature complexity and reconstruction accuracy,
+                   demonstrating the potential of machine learning algorithms to
+                   perform effectively in data-limited environments, such as
+                   those expected in Fusion Power Plants (FPP) due to diagnostic
+                   constraints imposed by the presence of blankets and
+                   shielding.",
+  month         =  "15~" # may,
+  year          =  2025,
+  url           = "http://arxiv.org/abs/2505.10709",
+  file          = "All_Papers/plasma-physics-ml/Stokolesov_et_al._2025_-_Reconstructing_the_plasma_boundary_with_a_reduced_set_of_diagnostics.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2505.10709",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Wang2024-fi,
+  title         = "Physics-informed deep learning model for line-integral
+                   diagnostics across fusion devices",
+  author        = "Wang, Cong and Yang, Weizhe and Wang, Haiping and Yang,
+                   Renjie and Li, Jing and Wang, Zhijun and Wei, Yixiong and
+                   Huang, Xianli and Hu, Chenshu and Liu, Zhaoyang and Yu,
+                   Xinyao and Zou, Changqing and Zhao, Zhifeng",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Rapid reconstruction of 2D plasma profiles from line-integral
+                   measurements is important in nuclear fusion. This paper
+                   introduces a physics-informed model architecture called
+                   Onion, that can enhance the performance of models and be
+                   adapted to various backbone networks. The model under Onion
+                   incorporates physical information by a multiplication process
+                   and applies the physics-informed loss function according to
+                   the principle of line integration. Prediction results
+                   demonstrate that the additional input of physical information
+                   improves the deep learning model's ability, leading to a
+                   reduction in the average relative error E\_1 between the
+                   reconstruction profiles and the target profiles by
+                   approximately 0.84x10\textasciicircum(-2) on synthetic
+                   datasets and about 0.06x10\textasciicircum(-2) on
+                   experimental datasets. Furthermore, the implementation of the
+                   Softplus activation function in the final two fully connected
+                   layers improves model performance. This enhancement results
+                   in a reduction in the E\_1 by approximately
+                   1.06x10\textasciicircum(-2) on synthetic datasets and about
+                   0.11x10\textasciicircum(-2) on experimental datasets. The
+                   incorporation of the physics-informed loss function has been
+                   shown to correct the model's predictions, bringing the
+                   back-projections closer to the actual inputs and reducing the
+                   errors associated with inversion algorithms. Besides, we have
+                   developed a synthetic data model to generate customized
+                   line-integral diagnostic datasets and have also collected
+                   soft x-ray diagnostic datasets from EAST and HL-2A. This
+                   study achieves reductions in reconstruction errors, and
+                   accelerates the development of surrogate models in fusion
+                   research.",
+  month         =  "27~" # nov,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2412.00087",
+  file          = "All_Papers/plasma-physics-ml/Wang_et_al._2024_-_Physics-informed_deep_learning_model_for_line-integral_diagnostics_across_fusion_devices.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2412.00087",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Jang2023-ly,
+  title         = "{Grad-Shafranov} equilibria via data-free physics informed
+                   neural networks",
+  author        = "Jang, Byoungchan and Kaptanoglu, Alan A and Gaur, Rahul and
+                   Pan, Shaw and Landreman, Matt and Dorland, William",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "A large number of magnetohydrodynamic (MHD) equilibrium
+                   calculations are often required for uncertainty
+                   quantification, optimization, and real-time diagnostic
+                   information, making MHD equilibrium codes vital to the field
+                   of plasma physics. In this paper, we explore a method for
+                   solving the Grad-Shafranov equation by using Physics-Informed
+                   Neural Networks (PINNs). For PINNs, we optimize neural
+                   networks by directly minimizing the residual of the PDE as a
+                   loss function. We show that PINNs can accurately and
+                   effectively solve the Grad-Shafranov equation with several
+                   different boundary conditions. We also explore the parameter
+                   space by varying the size of the model, the learning rate,
+                   and boundary conditions to map various trade-offs such as
+                   between reconstruction error and computational speed.
+                   Additionally, we introduce a parameterized PINN framework,
+                   expanding the input space to include variables such as
+                   pressure, aspect ratio, elongation, and triangularity in
+                   order to handle a broader range of plasma scenarios within a
+                   single network. Parametrized PINNs could be used in future
+                   work to solve inverse problems such as shape optimization.",
+  month         =  "22~" # nov,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2311.13491",
+  file          = "All_Papers/plasma-physics-ml/Jang_et_al._2023_-_Grad-Shafranov_equilibria_via_data-free_physics_informed_neural_networks.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2311.13491",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Liu2024-ip,
+  title         = "Application of Neural Ordinary Differential Equations for
+                   tokamak plasma dynamics analysis",
+  author        = "Liu, Zefang and Stacey, Weston M",
+  journal       = "arXiv [physics.plasm-ph]",
+  abstract      = "In the quest for controlled thermonuclear fusion, tokamaks
+                   present complex challenges in understanding burning plasma
+                   dynamics. This study introduces a multi-region
+                   multi-timescale transport model, employing Neural Ordinary
+                   Differential Equations (Neural ODEs) to simulate the
+                   intricate energy transfer processes within tokamaks. Our
+                   methodology leverages Neural ODEs for the numerical
+                   derivation of diffusivity parameters from DIII-D tokamak
+                   experimental data, enabling the precise modeling of energy
+                   interactions between electrons and ions across various
+                   regions, including the core, edge, and scrape-off layer.
+                   These regions are conceptualized as distinct nodes, capturing
+                   the critical timescales of radiation and transport processes
+                   essential for efficient tokamak operation. Validation against
+                   DIII-D plasmas under various auxiliary heating conditions
+                   demonstrates the model's effectiveness, ultimately shedding
+                   light on ways to enhance tokamak performance with deep
+                   learning.",
+  month         =  "3~" # mar,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2403.01635",
+  file          = "All_Papers/plasma-physics-ml/Liu_and_Stacey_2024_-_Application_of_Neural_Ordinary_Differential_Equations_for_tokamak_plasma_dynamics_analysis.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "physics.plasm-ph",
+  eprint        = "2403.01635",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Brown2024-tg,
+  title         = "Sample-efficient Bayesian optimisation using known
+                   invariances",
+  author        = "Brown, Theodore and Cioba, Alexandru and Bogunovic, Ilija",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Bayesian optimisation (BO) is a powerful framework for global
+                   optimisation of costly functions, using predictions from
+                   Gaussian process models (GPs). In this work, we apply BO to
+                   functions that exhibit invariance to a known group of
+                   transformations. We show that vanilla and constrained BO
+                   algorithms are inefficient when optimising such invariant
+                   objectives, and provide a method for incorporating group
+                   invariances into the kernel of the GP to produce
+                   invariance-aware algorithms that achieve significant
+                   improvements in sample efficiency. We derive a bound on the
+                   maximum information gain of these invariant kernels, and
+                   provide novel upper and lower bounds on the number of
+                   observations required for invariance-aware BO algorithms to
+                   achieve $\epsilon$-optimality. We demonstrate our method's
+                   improved performance on a range of synthetic invariant and
+                   quasi-invariant functions. We also apply our method in the
+                   case where only some of the invariance is incorporated into
+                   the kernel, and find that these kernels achieve similar gains
+                   in sample efficiency at significantly reduced computational
+                   cost. Finally, we use invariant BO to design a current drive
+                   system for a nuclear fusion reactor, finding a
+                   high-performance solution where non-invariant methods failed.",
+  month         =  "22~" # oct,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2410.16972",
+  file          = "All_Papers/plasma-physics-ml/Brown_et_al._2024_-_Sample-efficient_Bayesian_optimisation_using_known_invariances.pdf",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2410.16972",
+  keywords      = "plasma-physics-ml"
+}
+
+@ARTICLE{Ding2024-pq,
+  title     = "A high-density and high-confinement tokamak plasma regime for
+               fusion energy",
+  author    = "Ding, S and Garofalo, A M and Wang, H Q and Weisberg, D B and Li,
+               Z Y and Jian, X and Eldon, D and Victor, B S and Marinoni, A and
+               Hu, Q M and Carvalho, I S and Odstr\v{c}il, T and Wang, L and
+               Hyatt, A W and Osborne, T H and Gong, X Z and Qian, J P and
+               Huang, J and McClenaghan, J and Holcomb, C T and Hanson, J M",
+  journal   = "Nature",
+  publisher = "Springer Science and Business Media LLC",
+  volume    =  629,
+  number    =  8012,
+  pages     = "555--560",
+  abstract  = "The tokamak approach, utilizing a toroidal magnetic field
+               configuration to confine a hot plasma, is one of the most
+               promising designs for developing reactors that can exploit
+               nuclear fusion to generate electrical energy1,2. To reach the
+               goal of an economical reactor, most tokamak reactor designs3-10
+               simultaneously require reaching a plasma line-averaged density
+               above an empirical limit-the so-called Greenwald density11-and
+               attaining an energy confinement quality better than the standard
+               high-confinement mode12,13. However, such an operating regime has
+               never been verified in experiments. In addition, a long-standing
+               challenge in the high-confinement mode has been the compatibility
+               between a high-performance core and avoiding large, transient
+               edge perturbations that can cause very high heat loads on the
+               plasma-facing-components in tokamaks. Here we report the
+               demonstration of stable tokamak plasmas with a line-averaged
+               density approximately 20\% above the Greenwald density and an
+               energy confinement quality of approximately 50\% better than the
+               standard high-confinement mode, which was realized by taking
+               advantage of the enhanced suppression of turbulent transport
+               granted by high density-gradients in the high-poloidal-beta
+               scenario14,15. Furthermore, our experimental results show an
+               integration of very low edge transient perturbations with the
+               high normalized density and confinement core. The operating
+               regime we report supports some critical requirements in many
+               fusion reactor designs all over the world and opens a potential
+               avenue to an operating point for producing economically
+               attractive fusion energy.",
+  month     =  "24~" # may,
+  year      =  2024,
+  url       = "https://www.nature.com/articles/s41586-024-07313-3",
+  file      = "All_Papers/plasma-physics-ml/Ding_et_al._2024_-_A_high-density_and_high-confinement_tokamak_plasma_regime_for_fusion_energy.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1038/s41586-024-07313-3",
+  pmc       = "PMC11096097",
+  pmid      =  38658758,
+  issn      = "0028-0836,1476-4687",
+  language  = "en"
+}
+
+@ARTICLE{Arbon2021-ck,
+  title     = "Rapidly-convergent flux-surface shape parameterization",
+  author    = "Arbon, R and Candy, J and Belli, E A",
+  journal   = "Plasma physics and controlled fusion",
+  publisher = "IOP Publishing",
+  volume    =  63,
+  number    =  1,
+  pages     =  012001,
+  abstract  = "Abstract We propose a novel flux-surface parameterization
+               suitable for local MHD equilibrium calculations with
+               strongly-shaped flux surfaces. The method is based on a
+               systematic expansion in a small number of intuitive shape
+               parameters, and reduces to the well-known Miller D-shaped
+               parameterization in the limit where some of the coefficients are
+               set to zero. The new parameterization is valid for up-down
+               asymmetric plasmas and provides an improvement to the Miller
+               form. Simultaneously, the method is rapidly convergent and
+               requires only about half the number of shape parameters as a
+               general Fourier representation in the pedestal.",
+  month     =  "1~" # jan,
+  year      =  2021,
+  url       = "https://www.osti.gov/servlets/purl/1708848",
+  file      = "All_Papers/plasma-physics-ml/Arbon_et_al._2021_-_Rapidly-convergent_flux-surface_shape_parameterization.pdf",
+  keywords  = "plasma-physics-ml",
+  doi       = "10.1088/1361-6587/abc63b",
+  issn      = "0741-3335,1361-6587"
+}
+
+@ARTICLE{Degrave2022-vw,
+  title       = "Magnetic control of tokamak plasmas through deep reinforcement
+                 learning",
+  author      = "Degrave, Jonas and Felici, Federico and Buchli, Jonas and
+                 Neunert, Michael and Tracey, Brendan and Carpanese, Francesco
+                 and Ewalds, Timo and Hafner, Roland and Abdolmaleki, Abbas and
+                 de Las Casas, Diego and Donner, Craig and Fritz, Leslie and
+                 Galperti, Cristian and Huber, Andrea and Keeling, James and
+                 Tsimpoukelli, Maria and Kay, Jackie and Merle, Antoine and
+                 Moret, Jean-Marc and Noury, Seb and Pesamosca, Federico and
+                 Pfau, David and Sauter, Olivier and Sommariva, Cristian and
+                 Coda, Stefano and Duval, Basil and Fasoli, Ambrogio and Kohli,
+                 Pushmeet and Kavukcuoglu, Koray and Hassabis, Demis and
+                 Riedmiller, Martin",
+  affiliation = "DeepMind, London, UK. Swiss Plasma Center - EPFL, Lausanne,
+                 Switzerland. federico.felici@epfl.ch. DeepMind, London, UK.
+                 buchli@deepmind.com. DeepMind, London, UK.
+                 btracey@deepmind.com. Swiss Plasma Center - EPFL, Lausanne,
+                 Switzerland.",
+  journal     = "Nature",
+  publisher   = "Springer Science and Business Media LLC",
+  volume      =  602,
+  number      =  7897,
+  pages       = "414--419",
+  abstract    = "AbstractNuclear fusion using magnetic confinement, in
+                 particular in the tokamak configuration, is a promising path
+                 towards sustainable energy. A core challenge is to shape and
+                 maintain a high-temperature plasma within the tokamak vessel.
+                 This requires high-dimensional, high-frequency, closed-loop
+                 control using magnetic actuator coils, further complicated by
+                 the diverse requirements across a wide range of plasma
+                 configurations. In this work, we introduce a previously
+                 undescribed architecture for tokamak magnetic controller design
+                 that autonomously learns to command the full set of control
+                 coils. This architecture meets control objectives specified at
+                 a high level, at the same time satisfying physical and
+                 operational constraints. This approach has unprecedented
+                 flexibility and generality in problem specification and yields
+                 a notable reduction in design effort to produce new plasma
+                 configurations. We successfully produce and control a diverse
+                 set of plasma configurations on the Tokamak {\`{a}}
+                 Configuration Variable1,2, including elongated, conventional
+                 shapes, as well as advanced configurations, such as negative
+                 triangularity and `snowflake' configurations. Our approach
+                 achieves accurate tracking of the location, current and shape
+                 for these configurations. We also demonstrate sustained
+                 `droplets' on TCV, in which two separate plasmas are maintained
+                 simultaneously within the vessel. This represents a notable
+                 advance for tokamak feedback control, showing the potential of
+                 reinforcement learning to accelerate research in the fusion
+                 domain, and is one of the most challenging real-world systems
+                 to which reinforcement learning has been applied.",
+  month       =  feb,
+  year        =  2022,
+  url         = "http://dx.doi.org/10.1038/s41586-021-04301-9",
+  file        = "All_Papers/plasma-physics-ml/Degrave_et_al._2022_-_s41586-021-04301-9_(1).pdf;All_Papers/plasma-physics-ml/Degrave_et_al._2022_-_Magnetic_control_of_tokamak_plasmas_through_deep_r.pdf;All_Papers/plasma-physics-ml/Degrave_et_al._2022_-_Magnetic_control_of_tokamak_plasmas_through_deep_reinforcement_learning.pdf",
+  keywords    = "plasma-physics-ml",
+  doi         = "10.1038/s41586-021-04301-9",
+  pmc         = "PMC8850200",
+  pmid        =  35173339,
+  issn        = "0028-0836,1476-4687",
+  language    = "en"
+}

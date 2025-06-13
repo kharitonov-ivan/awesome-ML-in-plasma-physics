@@ -1,0 +1,32 @@
+version = 1
+revision = 2
+requires-python = ">=3.8"
+
+[[package]]
+name = "awesome-ml-plasma-physics"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "bibtexparser" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "bibtexparser", specifier = ">=2.0.0b7" }]
+
+[[package]]
+name = "bibtexparser"
+version = "2.0.0b8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pylatexenc" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a3/b6/967e030d0f8359b912a64ce7447db485064862a4d3980cac07b398bc95be/bibtexparser-2.0.0b8.tar.gz", hash = "sha256:11eaaa1fe80154f70092e91fa7e3fed5e5c81021f6c6c09151e36b8533f36994", size = 37746, upload-time = "2024-12-04T20:17:42.177Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cb/4e/226cfbf6c61c38399fc19e5f46db755ffea32f77ef078982c953031c8a3c/bibtexparser-2.0.0b8-py3-none-any.whl", hash = "sha256:eda1e6dbc7bbc040d351c926ead97a36f4734858656f3514a933259878bd37f1", size = 39642, upload-time = "2024-12-04T20:17:40.736Z" },
+]
+
+[[package]]
+name = "pylatexenc"
+version = "2.10"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/5d/ab/34ec41718af73c00119d0351b7a2531d2ebddb51833a36448fc7b862be60/pylatexenc-2.10.tar.gz", hash = "sha256:3dd8fd84eb46dc30bee1e23eaab8d8fb5a7f507347b23e5f38ad9675c84f40d3", size = 162597, upload-time = "2021-04-06T07:56:07.854Z" }
