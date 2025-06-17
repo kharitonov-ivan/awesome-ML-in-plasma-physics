@@ -8,7 +8,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 
 ## Contents
 
-[Research Papers 📚](#research-papers) | [Tools 🛠️](#tools)
+[Research Papers 📚](#research-papers) | [Implementation Papers 💻](#implementation-papers) | [Tools 🛠️](#tools)
 
 ## Research Papers
 
@@ -70,6 +70,12 @@ Papers are organized *chronologically* with format ** "**year** - **title** - *a
 - **2018** - **Applications of Deep Learning to Nuclear Fusion Research** - *Diogo R. Ferreira* - arXiv - [arXiv](https://arxiv.org/abs/1811.00333) <!-- imported-from-bib -->
 - **2016** - **Development of a neural network technique for KSTAR Thomson scattering diagnostics** - *Lee, Seung Hun, Lee, J. H., Yamada, I., Park, Jae Sun* - arXiv - [arXiv](https://arxiv.org/abs/https://pubs.aip.org/aip/rsi/article-pdf/doi/10.1063/1.4961079/15616023/11e533\_1\_online.pdf) - Neural networks provide powerful approaches of dealing with nonlinear data and have been successfully applied to fusion plasma diagnostics and control systems. Controlling tokamak plasmas in real time is essential to measure the plasma parameters in situ. However, the \ensuremath{\chi}2 method tr... <!-- imported-from-bib -->
 - **** - **APS Division of Plasma Physics Meeting Abstracts** - *{Neiser* - arXiv - [link](https://ui.adsabs.harvard.edu/abs/2023APS..DPPPP1039N) <!-- imported-from-bib -->
+## Implementation Papers
+
+Papers with publicly available code implementations:
+
+- **Physics-informed deep learning model for line-integral diagnostics across fusion devices** - *Wang et al. (2025)* - [Paper](https://doi.org/10.1088/1741-4326/ade0ce) | [Code](https://github.com/calledice/onion) - Neural network model for cross-device line-integral diagnostics with physics constraints
+
 ## Tools
 
 ### Simulation and Modeling Frameworks
