@@ -26,6 +26,16 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
                transport studies. GAIT leverages a convolutional variational
                auto-encoder and a recurrent n... <!-- imported-from-bib -->
 
+**A generative artificial intelligence framework for long-time
+               plasma turbulence simulations** - **2025** - *Clavier, B, Zarzoso, D, del-Castillo-Negrete, D and
+               Fr\'{e}nod, E* - journal - [arXiv](https://arxiv.org/abs/https://pubs.aip.org/aip/pop/article-pdf/doi/10.1063/5.0255386/20553361/063905\_1\_5.0255386.pdf) | [DOI](https://doi.org/10.1063/5.0255386) - Generative deep learning techniques are employed in a novel
+               framework for the construction of surrogate models capturing the
+               spatiotemporal dynamics of 2D plasma turbulence. The proposed
+               Generative Artificial Intelligence Turbulence (GAIT) framework
+               enables the acceleration of turbulence simulations for long-time
+               transport studies. GAIT leverages a convolutional variational
+               auto-encoder and a recurrent n... <!-- imported-from-bib -->
+
 **Active ramp-down control and trajectory design for tokamaks with
                neural differential equations and reinforcement learning** - **2025** - *Wang, Allen M, Rea, Cristina, So, Oswin, Dawson, Charles, Garnier, Darren T, Fan, Chuchu* - journal - [DOI](https://doi.org/10.1038/s42005-025-02146-6) - The tokamak offers a promising path to fusion energy, but
                disruptions pose a major economic risk, motivating solutions to
@@ -605,6 +615,10 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
                could help scientists to better understand these phenomena. With
                the growing discharge times in f... <!-- imported-from-bib -->
 
+**Feedforward beta control in the {KSTAR} tokamak by deep
+               reinforcement learning** - **2021** - *Seo, J, Na, Y, Kim, B, Lee, C Y, Park, M, Park, S
+               J, Lee, Y H* - journal - [DOI](https://doi.org/10.1088/1741-4326/ac121b) | [IOP](https://iopscience.iop.org/article/10.1088/1741-4326/ac121b) <!-- imported-from-bib -->
+
 **Neural network surrogate of {QuaLiKiz} using {JET} experimental
                data to populate training space** - **2021** - *Ho, A, Citrin, J, Bourdelle, C, Camenen, Y, Casson, F
                J, van de Plassche, K L, Weisen, H, {JET Contributors}* - journal - [arXiv](https://arxiv.org/abs/https://pubs.aip.org/aip/pop/article-pdf/doi/10.1063/5.0038290/12361366/032305\_1\_online.pdf) | [DOI](https://doi.org/10.1063/5.0038290) - Within integrated tokamak plasma modeling, turbulent transport
@@ -725,6 +739,10 @@ Papers with publicly available code implementations:
 - [SIMSOPT](https://github.com/hiddenSymmetries/simsopt) - Flexible stellarator optimization framework in Python/C++ with interfaces to VMEC and SPEC, including ML-ready optimization routines and parallelized gradient calculations
 - [QuaLiKiz / QLKNN](https://gitlab.com/qualikiz-group) - Quasi-linear gyrokinetic transport model for tokamak plasmas with neural network surrogate (QLKNN) for 10,000x faster predictions
 - [Travis Code](https://www.ipp.mpg.de/1060709/travis) - IPP Max Planck Institute plasma physics code
+- [OpenFUSIONToolkit](https://github.com/OpenFUSIONToolkit/OpenFUSIONToolkit) - Open source fusion simulation toolkit with comprehensive plasma physics modeling capabilities
+- [OpenPOPCON](https://github.com/hansec/OpenPOPCON) - Open source Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization
+- [CFS-POPCON](https://github.com/cfs-energy/cfspopcon) - Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization 
+
 
 
 ### Machine Learning Frameworks for Plasma Physics
