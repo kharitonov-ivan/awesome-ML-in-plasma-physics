@@ -220,24 +220,37 @@ Papers with publicly available code implementations:
 - [FUSE.jl](https://github.com/ProjectTorreyPines/FUSE.jl) - Fusion Simulation Engine in Julia
 - [MXHEquilibrium.jl](https://github.com/ProjectTorreyPines/MXHEquilibrium.jl) - MHD equilibrium solver in Julia
 - [vmecpp](https://github.com/proximafusion/vmecpp) - C++ implementation of the VMEC stellarator equilibrium code
+- [Raytrax](https://github.com/proximafusion/raytrax) - ECRH ray tracing for fusion plasmas in JAX with JIT compilation and automatic differentiation
 - [OMFIT](https://gafusion.github.io/OMFIT-source/) - One Modeling Framework for Integrated Tasks with over 110 physics modules, supporting machine learning reduced models and HPC workflow automation. Used by 400+ scientists across 25 institutions
 - [OMAS](https://gafusion.github.io/omas/) - Ordered Multi-dimensional Arrays for Magnetic Confinement Fusion, a standardized Python library for storing and manipulating tokamak experimental and simulation data
 - [SIMSOPT](https://github.com/hiddenSymmetries/simsopt) - Flexible stellarator optimization framework in Python/C++ with interfaces to VMEC and SPEC, including ML-ready optimization routines and parallelized gradient calculations
+- [DESC](https://github.com/PlasmaControl/DESC) - Stellarator equilibrium and optimization suite using pseudo-spectral methods and automatic differentiation
 - [QuaLiKiz / QLKNN](https://gitlab.com/qualikiz-group) - Quasi-linear gyrokinetic transport model for tokamak plasmas with neural network surrogate (QLKNN) for 10,000x faster predictions
 - [Travis Code](https://www.ipp.mpg.de/1060709/travis) - IPP Max Planck Institute plasma physics code
 - [OpenFUSIONToolkit](https://github.com/OpenFUSIONToolkit/OpenFUSIONToolkit) - Open source fusion simulation toolkit with comprehensive plasma physics modeling capabilities
 - [OpenPOPCON](https://github.com/hansec/OpenPOPCON) - Open source Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization
 - [CFS-POPCON](https://github.com/cfs-energy/cfspopcon) - Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization 
+- [duqtools](https://github.com/duqtools/duqtools) - IMAS-based dynamic uncertainty quantification for tokamak simulation campaigns
+- [GSFit](https://github.com/tokamak-energy/gsfit) - Grad-Shafranov Fit, a modern tokamak equilibrium reconstruction tool with a Rust solver and Python interface
 
 ### Machine Learning Frameworks for Plasma Physics
 
 - [FRNN (Fusion Recurrent Neural Network)](https://github.com/PPPLDeepLearning/plasma-python) - Deep learning package for tokamak disruption prediction using recurrent neural networks with stateful LSTM training, multi-machine capabilities, and TensorBoard integration (PPPL)
+- [tglfnn-ukaea](https://github.com/ukaea/tglfnn-ukaea) - UKAEA neural network surrogate models of the TGLF quasilinear plasma turbulent transport simulator
+- [VICTOR-GSC2026](https://github.com/vijaideen/VICTOR-GSC2026) [WIP] - Physics-informed neural network notebook for WEST tokamak soft X-ray tomography reconstruction using JAX/Flax
 - [disruption-py](https://github.com/MIT-PSFC/disruption-py) - Physics-based scientific framework for disruption analysis with AI/ML applications supporting multi-tokamak analysis (C-Mod, DIII-D compatibility) (MIT PSFC)
 
 ### Data Platforms and Search Tools
 
 - [TokSearch](https://ga-fdp.github.io/toksearch) - Search engine for fusion experimental data ([paper](https://www.sciencedirect.com/science/article/abs/pii/S0920379618301042))
 - [DisruptionBench](https://github.com/MIT-PSFC/disruption-benchmark) - First standardized benchmark for tokamak disruption prediction across DIII-D, EAST, and Alcator C-Mod with ~30,000 discharges focusing on model generalizability
+- [ConStellaration](https://github.com/proximafusion/constellaration) - Proxima Fusion dataset of QI-like stellarator boundaries, ideal-MHD equilibria, and optimization benchmarks ([paper](https://arxiv.org/abs/2506.19583), [dataset](https://huggingface.co/datasets/proxima-fusion/constellaration))
+
+### GitHub Discovery and Organizations
+
+- [ITER Organization GitHub](https://github.com/iterorganization) - Official ITER GitHub organization for IMAS, plasma control, waveform, validation, and fusion-data infrastructure repositories
+- [Proxima Fusion GitHub](https://github.com/proximafusion) - Proxima Fusion's open-source stellarator and fusion tooling; worth checking for new JAX, VMEC, ray-tracing, and optimization projects
+- [Nuclear Fusion Open Source projects](https://github.com/kripnerl/fusion-open-source) - Community-maintained discovery list of open-source magnetic-fusion projects
 
 ## Contributing
 
