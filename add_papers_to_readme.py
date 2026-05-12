@@ -19,6 +19,27 @@ def clean_text(value: str) -> str:
     return re.sub(r'\s+', ' ', str(value)).strip()
 
 
+def clean_title(value: str) -> str:
+    """Normalize BibTeX title text for Markdown display.
+
+    BibTeX commonly uses braces to preserve capitalization, for example
+    ``{TORAX}`` or ``{DIII-D}``. Those braces are syntax, not title text, and
+    can render poorly in Markdown when kept literally.
+    """
+    title = clean_text(value).replace('{', '').replace('}', '')
+    # Zotero sometimes exports fully protected words as split all-caps chunks,
+    # e.g. "{N} {EURAL}". Rejoin only all-caps fragments.
+    return re.sub(r'\b([A-Z])\s+([A-Z]{2,})\b', r'\1\2', title)
+
+
+def clean_author_name(value: str) -> str:
+    """Clean a single BibTeX author token without damaging TeX accents."""
+    author = clean_text(value)
+    if author.startswith('{') and author.endswith('}'):
+        return author[1:-1]
+    return author
+
+
 def normalize_arxiv_id(value: str) -> str:
     """Return an arXiv id from a real arXiv id/url, or an empty string."""
     value = clean_text(value)
@@ -42,13 +63,13 @@ def convert_bibtex_entry(entry) -> Dict[str, str]:
     
     # Title
     if 'title' in entry.fields_dict:
-        fields['title'] = clean_text(entry.fields_dict['title'].value)
+        fields['title'] = clean_title(entry.fields_dict['title'].value)
     
     # Authors - keep all authors without truncation
     if 'author' in entry.fields_dict:
         authors = clean_text(entry.fields_dict['author'].value)
         # Split by 'and' and clean up
-        author_list = [clean_text(author) for author in authors.split(' and ')]
+        author_list = [clean_author_name(author) for author in authors.split(' and ')]
         # Keep all authors without truncation
         fields['authors'] = ", ".join(author_list)
     
