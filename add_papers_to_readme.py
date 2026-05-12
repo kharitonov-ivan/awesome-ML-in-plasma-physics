@@ -14,6 +14,24 @@ from typing import Dict, List
 import bibtexparser
 
 
+def clean_text(value: str) -> str:
+    """Collapse BibTeX line wrapping and redundant whitespace."""
+    return re.sub(r'\s+', ' ', str(value)).strip()
+
+
+def normalize_arxiv_id(value: str) -> str:
+    """Return an arXiv id from a real arXiv id/url, or an empty string."""
+    value = clean_text(value)
+    arxiv_pattern = r'(\d{4}\.\d{4,5})(?:v\d+)?'
+    if re.search(r'arxiv\.org/(?:abs|pdf)/|arXiv:', value, re.IGNORECASE):
+        match = re.search(r'(?:arxiv\.org/(?:abs|pdf)/|arXiv:)\s*' + arxiv_pattern, value, re.IGNORECASE)
+        return match.group(1) if match else ""
+    # Plain eprint fields may contain just the arXiv id. Do not scan arbitrary
+    # DOI/publisher URLs for digit-dot-digit substrings that only look arXiv-ish.
+    match = re.fullmatch(arxiv_pattern, value, re.IGNORECASE)
+    return match.group(1) if match else ""
+
+
 def convert_bibtex_entry(entry) -> Dict[str, str]:
     """Convert a bibtexparser Entry to our internal format."""
     fields = {}
@@ -24,37 +42,39 @@ def convert_bibtex_entry(entry) -> Dict[str, str]:
     
     # Title
     if 'title' in entry.fields_dict:
-        fields['title'] = entry.fields_dict['title'].value
+        fields['title'] = clean_text(entry.fields_dict['title'].value)
     
     # Authors - keep all authors without truncation
     if 'author' in entry.fields_dict:
-        authors = entry.fields_dict['author'].value
+        authors = clean_text(entry.fields_dict['author'].value)
         # Split by 'and' and clean up
-        author_list = [author.strip() for author in authors.split(' and ')]
+        author_list = [clean_text(author) for author in authors.split(' and ')]
         # Keep all authors without truncation
         fields['authors'] = ", ".join(author_list)
     
     # Year
     if 'year' in entry.fields_dict:
-        fields['year'] = entry.fields_dict['year'].value
+        fields['year'] = clean_text(entry.fields_dict['year'].value)
     
-    # ArXiv ID
+    # ArXiv ID. Some legacy entries put publisher PDF URLs in eprint;
+    # only create an arXiv link when the value is actually an arXiv id/url.
     if 'eprint' in entry.fields_dict:
-        arxiv_id = entry.fields_dict['eprint'].value
-        fields['arxiv_id'] = arxiv_id
-        fields['arxiv_url'] = f"https://arxiv.org/abs/{arxiv_id}"
+        arxiv_id = normalize_arxiv_id(entry.fields_dict['eprint'].value)
+        if arxiv_id:
+            fields['arxiv_id'] = arxiv_id
+            fields['arxiv_url'] = f"https://arxiv.org/abs/{arxiv_id}"
     
     # DOI
     if 'doi' in entry.fields_dict:
-        fields['doi'] = entry.fields_dict['doi'].value
+        fields['doi'] = clean_text(entry.fields_dict['doi'].value)
     
     # URL
     if 'url' in entry.fields_dict:
-        fields['url'] = entry.fields_dict['url'].value
+        fields['url'] = clean_text(entry.fields_dict['url'].value)
     
     # Abstract
     if 'abstract' in entry.fields_dict:
-        fields['abstract'] = entry.fields_dict['abstract'].value.strip()
+        fields['abstract'] = clean_text(entry.fields_dict['abstract'].value)
     
     return fields
 
@@ -95,9 +115,18 @@ def format_readme_entry(entry: Dict[str, str]) -> str:
         doi_url = f"https://doi.org/{entry['doi']}"
         links.append(f"[DOI]({doi_url})")
     
-    # Check for URL (only if it's not already an arXiv URL)
-    if entry.get('url') and not (entry.get('arxiv_url') and entry['url'].startswith('http://arxiv.org')):
+    # Check for URL, skipping duplicates of arXiv and DOI links.
+    if entry.get('url'):
         url = entry['url']
+        normalized_url = url.replace('http://', 'https://')
+        is_duplicate_arxiv = bool(entry.get('arxiv_url') and normalized_url.startswith(entry['arxiv_url']))
+        is_duplicate_doi = bool(entry.get('doi') and entry['doi'].lower() in normalized_url.lower() and 'doi.org' in normalized_url.lower())
+    else:
+        url = ''
+        is_duplicate_arxiv = False
+        is_duplicate_doi = False
+
+    if url and not is_duplicate_arxiv and not is_duplicate_doi:
         
         # Determine link text based on URL using match-case
         match url:
