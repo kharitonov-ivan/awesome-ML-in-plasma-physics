@@ -232,6 +232,10 @@ Papers with publicly available code implementations:
 - [CFS-POPCON](https://github.com/cfs-energy/cfspopcon) - Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization 
 - [duqtools](https://github.com/duqtools/duqtools) - IMAS-based dynamic uncertainty quantification for tokamak simulation campaigns
 - [GSFit](https://github.com/tokamak-energy/gsfit) - Grad-Shafranov Fit, a modern tokamak equilibrium reconstruction tool with a Rust solver and Python interface
+- [ESSOS](https://github.com/uwplasma/ESSOS) - JAX-based e-stellarator simulation and optimization suite for stellarator coils, plasma boundaries, and magnetic-field equilibria
+- [ToFu](https://github.com/ToFuProject/tofu) - IMAS-compatible Python library for synthetic diagnostics, ray tracing, and tomography for fusion devices
+- [RT-GSFit](https://github.com/tokamak-energy/rtgsfit) [WIP] - Real-time Grad-Shafranov equilibrium reconstruction code deployed on ST40 and being generalized beyond device-specific workflows
+- [cfsem-py](https://github.com/cfs-energy/cfsem-py) - Python/Rust quasi-steady electromagnetics toolkit covering filament models, Biot-Savart calculations, and Grad-Shafranov utilities
 
 ### Machine Learning Frameworks for Plasma Physics
 
@@ -245,11 +249,18 @@ Papers with publicly available code implementations:
 - [TokSearch](https://ga-fdp.github.io/toksearch) - Search engine for fusion experimental data ([paper](https://www.sciencedirect.com/science/article/abs/pii/S0920379618301042))
 - [DisruptionBench](https://github.com/MIT-PSFC/disruption-benchmark) - First standardized benchmark for tokamak disruption prediction across DIII-D, EAST, and Alcator C-Mod with ~30,000 discharges focusing on model generalizability
 - [ConStellaration](https://github.com/proximafusion/constellaration) - Proxima Fusion dataset of QI-like stellarator boundaries, ideal-MHD equilibria, and optimization benchmarks ([paper](https://arxiv.org/abs/2506.19583), [dataset](https://huggingface.co/datasets/proxima-fusion/constellaration))
+- [FAIR MAST](https://github.com/ukaea/fair-mast) - UKAEA data management system and public catalog infrastructure for MAST tokamak experimental data
+- [OpenSTEP](https://github.com/ukaea/OpenSTEP) - UKAEA public data release for the STEP SPP-001 spherical-tokamak scenario in IMAS and NetCDF formats
+- [Open Density Limit Database](https://github.com/MIT-PSFC/open_density_limit_database) - MIT PSFC public Alcator C-Mod density-limit dataset with a demo notebook for supervised ML classification
+- [SPARCPublic](https://github.com/cfs-energy/SPARCPublic) - CFS public SPARC baseline physics inputs for common plasma-physics codes, including equilibria and profile files
 
 ### GitHub Discovery and Organizations
 
 - [ITER Organization GitHub](https://github.com/iterorganization) - Official ITER GitHub organization for IMAS, plasma control, waveform, validation, and fusion-data infrastructure repositories
 - [Proxima Fusion GitHub](https://github.com/proximafusion) - Proxima Fusion's open-source stellarator and fusion tooling; worth checking for new JAX, VMEC, ray-tracing, and optimization projects
+- [UKAEA GitHub](https://github.com/ukaea) - UKAEA open-source fusion software and data repositories, including MAST data infrastructure, STEP scenario releases, and tokamak systems tools
+- [MIT PSFC GitHub](https://github.com/MIT-PSFC) - MIT Plasma Science and Fusion Center repositories for disruption analysis, open datasets, SPARC/Alcator C-Mod tooling, and ML working-group materials
+- [CFS Energy GitHub](https://github.com/cfs-energy) - Commonwealth Fusion Systems public repositories for SPARC physics inputs, POPCON analysis, electromagnetics, and scientific-software utilities
 - [Nuclear Fusion Open Source projects](https://github.com/kripnerl/fusion-open-source) - Community-maintained discovery list of open-source magnetic-fusion projects
 
 ## Contributing
