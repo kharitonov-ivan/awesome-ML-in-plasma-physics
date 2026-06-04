@@ -43,6 +43,8 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [ToFu](https://github.com/ToFuProject/tofu) - IMAS-compatible Python library for synthetic diagnostics, ray tracing, and tomography for fusion devices
 - [RT-GSFit](https://github.com/tokamak-energy/rtgsfit) [WIP] - Real-time Grad-Shafranov equilibrium reconstruction code deployed on ST40 and being generalized beyond device-specific workflows
 - [cfsem-py](https://github.com/cfs-energy/cfsem-py) - Python/Rust quasi-steady electromagnetics toolkit covering filament models, Biot-Savart calculations, and Grad-Shafranov utilities
+- [MEQ-JAX](https://gitlab.epfl.ch/spc/public/meq/meq_jax) - JAX rewrite of the MEQ magnetic equilibrium solver enabling automatic differentiation, batching, and GPU/TPU acceleration (EPFL SPC, experimental)
+- [FORGE](https://github.com/FORGExhaust/FORGE) - Python tool for optimising tokamak divertor magnetic geometries via simulated annealing (LGPL-3.0)
 
 ### Machine Learning Frameworks for Plasma Physics
 
