@@ -20,10 +20,9 @@ The README has the following structure (preserve this order):
 3. Tools (manually maintained)
    - Simulation and Modeling Frameworks (with subcategories):
      - MHD Equilibrium — Grad-Shafranov solvers, equilibrium reconstruction, stellarator equilibrium
-     - Transport & Turbulence — transport solvers, gyrokinetic models, UQ
-     - Diagnostics & Atomic Physics — synthetic diagnostics, ray tracing, atomic data
-     - Integrated Frameworks & Design Tools — multi-physics frameworks, workflow, reactor design
-   - Machine Learning Frameworks for Plasma Physics
+     - Transport & Turbulence — transport solvers, gyrokinetic models, ML surrogates, RL control, UQ
+     - Diagnostics & Atomic Physics — synthetic diagnostics, ray tracing, atomic data, tomography reconstruction
+     - Integrated Frameworks & Design Tools — multi-physics frameworks, workflow, reactor design, disruption prediction
    - Data Platforms, Datasets & Benchmarks
    - Code Discovery and Organizations
 4. Implementation Papers (manually maintained, papers with public code)
