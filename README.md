@@ -10,7 +10,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 
 | Section | Description |
 |---------|-------------|
-| [Tools](#tools) | Simulation frameworks, ML toolkits, datasets, code orgs |
+| [Tools](#tools) | Simulation (equilibrium, transport, diagnostics, frameworks), ML toolkits, datasets, code orgs |
 | [Implementation Papers](#implementation-papers) | Papers with public code |
 | [Research Papers](#research-papers) | Full bibliography (chronological) |
 | [Contributing](#contributing) | How to add entries |
@@ -19,35 +19,46 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 
 ### Simulation and Modeling Frameworks
 
-- [TORAX](https://github.com/google-deepmind/torax) - Differentiable tokamak core transport simulator in JAX with ML-surrogate integration (QLKNN neural networks), trajectory optimization, and real-time capable compilation
+#### MHD Equilibrium
+
 - [FreeGSNKE](https://github.com/FusionComputingLab/freegsnke) - Free boundary equilibrium solver for tokamaks
 - [TokaMaker](https://github.com/OpenFUSIONToolkit/OpenFUSIONToolkit) - An open-source time-dependent Grad-Shafranov tool for the design and modeling of axisymmetric fusion devices ([paper](https://arxiv.org/abs/2311.07719))
+- [GSFit](https://github.com/tokamak-energy/gsfit) - Grad-Shafranov Fit, a modern tokamak equilibrium reconstruction tool with a Rust solver and Python interface
+- [RT-GSFit](https://github.com/tokamak-energy/rtgsfit) [WIP] - Real-time Grad-Shafranov equilibrium reconstruction code deployed on ST40 and being generalized beyond device-specific workflows
+- [MXHEquilibrium.jl](https://github.com/ProjectTorreyPines/MXHEquilibrium.jl) - MHD equilibrium solver in Julia
+- [MEQ-JAX](https://gitlab.epfl.ch/spc/public/meq/meq_jax) - JAX rewrite of the MEQ magnetic equilibrium solver enabling automatic differentiation, batching, and GPU/TPU acceleration (EPFL SPC, experimental)
+- [cfsem-py](https://github.com/cfs-energy/cfsem-py) - Python/Rust quasi-steady electromagnetics toolkit covering filament models, Biot-Savart calculations, and Grad-Shafranov utilities
+- [vmecpp](https://github.com/proximafusion/vmecpp) - C++ implementation of the VMEC stellarator equilibrium code
+- [DESC](https://github.com/PlasmaControl/DESC) - Stellarator equilibrium and optimization suite using pseudo-spectral methods and automatic differentiation
+- [ESSOS](https://github.com/uwplasma/ESSOS) - JAX-based e-stellarator simulation and optimization suite for stellarator coils, plasma boundaries, and magnetic-field equilibria
+
+#### Transport & Turbulence
+
+- [TORAX](https://github.com/google-deepmind/torax) - Differentiable tokamak core transport simulator in JAX with ML-surrogate integration (QLKNN neural networks), trajectory optimization, and real-time capable compilation
 - [RAPTOR](https://crppwww.epfl.ch/~sauter/raptor/) - RApid Plasma Transport simulatOR for tokamaks
 - [TGLF](https://gafusion.github.io/doc/tglf.html) - Trapped Gyro-Landau Fluid model for tokamak transport
-- [FUSE.jl](https://github.com/ProjectTorreyPines/FUSE.jl) - Fusion Simulation Engine in Julia
-- [MXHEquilibrium.jl](https://github.com/ProjectTorreyPines/MXHEquilibrium.jl) - MHD equilibrium solver in Julia
-- [vmecpp](https://github.com/proximafusion/vmecpp) - C++ implementation of the VMEC stellarator equilibrium code
+- [QuaLiKiz / QLKNN](https://gitlab.com/qualikiz-group) - Quasi-linear gyrokinetic transport model for tokamak plasmas with neural network surrogate (QLKNN) for 10,000x faster predictions
+- [duqtools](https://github.com/duqtools/duqtools) - IMAS-based dynamic uncertainty quantification for tokamak simulation campaigns
+
+#### Diagnostics & Atomic Physics
+
 - [Raytrax](https://github.com/proximafusion/raytrax) - ECRH ray tracing for fusion plasmas in JAX with JIT compilation and automatic differentiation
+- [ToFu](https://github.com/ToFuProject/tofu) - IMAS-compatible Python library for synthetic diagnostics, ray tracing, and tomography for fusion devices
+- [radas](https://github.com/cfs-energy/radas) - Simple Python library for fetching and calculating radiated power curves from OpenADAS atomic data (MIT)
+
+#### Integrated Frameworks & Design Tools
+
+- [FUSE.jl](https://github.com/ProjectTorreyPines/FUSE.jl) - Fusion Simulation Engine in Julia
 - [OMFIT](https://gafusion.github.io/OMFIT-source/) - One Modeling Framework for Integrated Tasks with over 110 physics modules, supporting machine learning reduced models and HPC workflow automation. Used by 400+ scientists across 25 institutions
 - [OMAS](https://gafusion.github.io/omas/) - Ordered Multi-dimensional Arrays for Magnetic Confinement Fusion, a standardized Python library for storing and manipulating tokamak experimental and simulation data
 - [SIMSOPT](https://github.com/hiddenSymmetries/simsopt) - Flexible stellarator optimization framework in Python/C++ with interfaces to VMEC and SPEC, including ML-ready optimization routines and parallelized gradient calculations
-- [DESC](https://github.com/PlasmaControl/DESC) - Stellarator equilibrium and optimization suite using pseudo-spectral methods and automatic differentiation
-- [QuaLiKiz / QLKNN](https://gitlab.com/qualikiz-group) - Quasi-linear gyrokinetic transport model for tokamak plasmas with neural network surrogate (QLKNN) for 10,000x faster predictions
-- [Travis Code](https://www.ipp.mpg.de/1060709/travis) - IPP Max Planck Institute plasma physics code
 - [OpenFUSIONToolkit](https://github.com/OpenFUSIONToolkit/OpenFUSIONToolkit) - Open source fusion simulation toolkit with comprehensive plasma physics modeling capabilities
-- [OpenPOPCON](https://github.com/hansec/OpenPOPCON) - Open source Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization
-- [CFS-POPCON](https://github.com/cfs-energy/cfspopcon) - Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization
-- [duqtools](https://github.com/duqtools/duqtools) - IMAS-based dynamic uncertainty quantification for tokamak simulation campaigns
-- [GSFit](https://github.com/tokamak-energy/gsfit) - Grad-Shafranov Fit, a modern tokamak equilibrium reconstruction tool with a Rust solver and Python interface
-- [ESSOS](https://github.com/uwplasma/ESSOS) - JAX-based e-stellarator simulation and optimization suite for stellarator coils, plasma boundaries, and magnetic-field equilibria
-- [ToFu](https://github.com/ToFuProject/tofu) - IMAS-compatible Python library for synthetic diagnostics, ray tracing, and tomography for fusion devices
-- [RT-GSFit](https://github.com/tokamak-energy/rtgsfit) [WIP] - Real-time Grad-Shafranov equilibrium reconstruction code deployed on ST40 and being generalized beyond device-specific workflows
-- [cfsem-py](https://github.com/cfs-energy/cfsem-py) - Python/Rust quasi-steady electromagnetics toolkit covering filament models, Biot-Savart calculations, and Grad-Shafranov utilities
-- [MEQ-JAX](https://gitlab.epfl.ch/spc/public/meq/meq_jax) - JAX rewrite of the MEQ magnetic equilibrium solver enabling automatic differentiation, batching, and GPU/TPU acceleration (EPFL SPC, experimental)
-- [FORGE](https://github.com/FORGExhaust/FORGE) - Python tool for optimising tokamak divertor magnetic geometries via simulated annealing (LGPL-3.0)
 - [bluemira](https://github.com/Fusion-Power-Plant-Framework/bluemira) - Integrated inter-disciplinary design tool for future fusion reactors with modules for plasma physics, engineering, and optimization (LGPL-2.1)
 - [PROCESS](https://github.com/ukaea/PROCESS) - UKAEA fusion power plant systems code for self-consistent parameter calculation and optimization (MIT)
-- [radas](https://github.com/cfs-energy/radas) - Simple Python library for fetching and calculating radiated power curves from OpenADAS atomic data (MIT)
+- [FORGE](https://github.com/FORGExhaust/FORGE) - Python tool for optimising tokamak divertor magnetic geometries via simulated annealing (LGPL-3.0)
+- [OpenPOPCON](https://github.com/hansec/OpenPOPCON) - Open source Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization
+- [CFS-POPCON](https://github.com/cfs-energy/cfspopcon) - Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization
+- [Travis Code](https://www.ipp.mpg.de/1060709/travis) - IPP Max Planck Institute plasma physics code
 
 ### Machine Learning Frameworks for Plasma Physics
 
