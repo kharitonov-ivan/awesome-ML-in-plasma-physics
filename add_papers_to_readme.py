@@ -368,7 +368,7 @@ def update_readme(readme_path: Path, entries: List[Dict[str, str]], dry_run: boo
     all_entries.sort(key=lambda x: (-x.get('year', 0), x.get('title', '')))
     
     # Build new papers section
-    new_papers_section = "## Research Papers\n\n*Papers are organized chronologically*\n\n**Format:** \"**title** - **year** - *authors* - journal/conference/thesis - link - abstract or summary\"\n\n"
+    new_papers_section = "## Research Papers\n\n*Papers are organized chronologically (newest first)*\n\n**Format:** \"**title** - **year** - *authors* - journal/conference/thesis - link - abstract or summary\"\n\n"
     
     for entry in all_entries:
         new_papers_section += entry['formatted'] + "\n"
