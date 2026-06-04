@@ -45,6 +45,9 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [cfsem-py](https://github.com/cfs-energy/cfsem-py) - Python/Rust quasi-steady electromagnetics toolkit covering filament models, Biot-Savart calculations, and Grad-Shafranov utilities
 - [MEQ-JAX](https://gitlab.epfl.ch/spc/public/meq/meq_jax) - JAX rewrite of the MEQ magnetic equilibrium solver enabling automatic differentiation, batching, and GPU/TPU acceleration (EPFL SPC, experimental)
 - [FORGE](https://github.com/FORGExhaust/FORGE) - Python tool for optimising tokamak divertor magnetic geometries via simulated annealing (LGPL-3.0)
+- [bluemira](https://github.com/Fusion-Power-Plant-Framework/bluemira) - Integrated inter-disciplinary design tool for future fusion reactors with modules for plasma physics, engineering, and optimization (LGPL-2.1)
+- [PROCESS](https://github.com/ukaea/PROCESS) - UKAEA fusion power plant systems code for self-consistent parameter calculation and optimization (MIT)
+- [radas](https://github.com/cfs-energy/radas) - Simple Python library for fetching and calculating radiated power curves from OpenADAS atomic data (MIT)
 
 ### Machine Learning Frameworks for Plasma Physics
 
@@ -52,6 +55,8 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [tglfnn-ukaea](https://github.com/ukaea/tglfnn-ukaea) - UKAEA neural network surrogate models of the TGLF quasilinear plasma turbulent transport simulator
 - [VICTOR-GSC2026](https://github.com/vijaideen/VICTOR-GSC2026) [WIP] - Physics-informed neural network notebook for WEST tokamak soft X-ray tomography reconstruction using JAX/Flax
 - [disruption-py](https://github.com/MIT-PSFC/disruption-py) - Physics-based scientific framework for disruption analysis with AI/ML applications supporting multi-tokamak analysis (C-Mod, DIII-D compatibility) (MIT PSFC)
+- [GymTORAX](https://github.com/antoine-mouchamps/gymtorax) - Gymnasium-compliant RL environment wrapping the TORAX plasma simulator for tokamak control, with ready-to-use ITER ramp-up scenario ([paper](https://arxiv.org/abs/2510.11283))
+- [Neural Gyrokinetics](https://github.com/ml-jku/neural-gyrokinetics) - ML tools for accelerating gyrokinetic turbulence simulations including GyroSwin (5D transformer surrogate) and PINC (physics-informed neural compression), with pretrained models on HuggingFace ([GyroSwin](https://arxiv.org/abs/2510.07314), [PINC](https://arxiv.org/abs/2602.04758))
 
 ### Data Platforms, Datasets & Benchmarks
 
@@ -62,6 +67,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [OpenSTEP](https://github.com/ukaea/OpenSTEP) - UKAEA public data release for the STEP SPP-001 spherical-tokamak scenario in IMAS and NetCDF formats
 - [Open Density Limit Database](https://github.com/MIT-PSFC/open_density_limit_database) - MIT PSFC public Alcator C-Mod density-limit dataset with a demo notebook for supervised ML classification
 - [SPARCPublic](https://github.com/cfs-energy/SPARCPublic) - CFS public SPARC baseline physics inputs for common plasma-physics codes, including equilibria and profile files
+- [UDA](https://github.com/ukaea/UDA) - UKAEA Universal Data Access library providing plugin-driven client-server and offline access to fusion experimental data with Python bindings (Apache-2.0)
 
 ### Code Discovery and Organizations
 
