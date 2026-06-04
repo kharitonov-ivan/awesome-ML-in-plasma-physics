@@ -10,7 +10,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 
 | Section | Description |
 |---------|-------------|
-| [Tools](#tools) | Simulation (equilibrium, transport, diagnostics, frameworks), ML toolkits, datasets, code orgs |
+| [Tools](#tools) | Simulation (equilibrium, transport, diagnostics, frameworks), datasets, code orgs |
 | [Implementation Papers](#implementation-papers) | Papers with public code |
 | [Research Papers](#research-papers) | Full bibliography (chronological) |
 | [Contributing](#contributing) | How to add entries |
@@ -38,6 +38,9 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [RAPTOR](https://crppwww.epfl.ch/~sauter/raptor/) - RApid Plasma Transport simulatOR for tokamaks
 - [TGLF](https://gafusion.github.io/doc/tglf.html) - Trapped Gyro-Landau Fluid model for tokamak transport
 - [QuaLiKiz / QLKNN](https://gitlab.com/qualikiz-group) - Quasi-linear gyrokinetic transport model for tokamak plasmas with neural network surrogate (QLKNN) for 10,000x faster predictions
+- [tglfnn-ukaea](https://github.com/ukaea/tglfnn-ukaea) - UKAEA neural network surrogate models of the TGLF quasilinear plasma turbulent transport simulator
+- [Neural Gyrokinetics](https://github.com/ml-jku/neural-gyrokinetics) - ML tools for accelerating gyrokinetic turbulence simulations including GyroSwin (5D transformer surrogate) and PINC (physics-informed neural compression), with pretrained models on HuggingFace ([GyroSwin](https://arxiv.org/abs/2510.07314), [PINC](https://arxiv.org/abs/2602.04758))
+- [GymTORAX](https://github.com/antoine-mouchamps/gymtorax) - Gymnasium-compliant RL environment wrapping the TORAX plasma simulator for tokamak control, with ready-to-use ITER ramp-up scenario ([paper](https://arxiv.org/abs/2510.11283))
 - [duqtools](https://github.com/duqtools/duqtools) - IMAS-based dynamic uncertainty quantification for tokamak simulation campaigns
 
 #### Diagnostics & Atomic Physics
@@ -45,9 +48,12 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [Raytrax](https://github.com/proximafusion/raytrax) - ECRH ray tracing for fusion plasmas in JAX with JIT compilation and automatic differentiation
 - [ToFu](https://github.com/ToFuProject/tofu) - IMAS-compatible Python library for synthetic diagnostics, ray tracing, and tomography for fusion devices
 - [radas](https://github.com/cfs-energy/radas) - Simple Python library for fetching and calculating radiated power curves from OpenADAS atomic data (MIT)
+- [VICTOR-GSC2026](https://github.com/vijaideen/VICTOR-GSC2026) [WIP] - Physics-informed neural network notebook for WEST tokamak soft X-ray tomography reconstruction using JAX/Flax
 
 #### Integrated Frameworks & Design Tools
 
+- [FRNN (Fusion Recurrent Neural Network)](https://github.com/PPPLDeepLearning/plasma-python) - Deep learning package for tokamak disruption prediction using recurrent neural networks with stateful LSTM training, multi-machine capabilities, and TensorBoard integration (PPPL)
+- [disruption-py](https://github.com/MIT-PSFC/disruption-py) - Physics-based scientific framework for disruption analysis with AI/ML applications supporting multi-tokamak analysis (C-Mod, DIII-D compatibility) (MIT PSFC)
 - [FUSE.jl](https://github.com/ProjectTorreyPines/FUSE.jl) - Fusion Simulation Engine in Julia
 - [OMFIT](https://gafusion.github.io/OMFIT-source/) - One Modeling Framework for Integrated Tasks with over 110 physics modules, supporting machine learning reduced models and HPC workflow automation. Used by 400+ scientists across 25 institutions
 - [OMAS](https://gafusion.github.io/omas/) - Ordered Multi-dimensional Arrays for Magnetic Confinement Fusion, a standardized Python library for storing and manipulating tokamak experimental and simulation data
@@ -59,15 +65,6 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [OpenPOPCON](https://github.com/hansec/OpenPOPCON) - Open source Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization
 - [CFS-POPCON](https://github.com/cfs-energy/cfspopcon) - Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization
 - [Travis Code](https://www.ipp.mpg.de/1060709/travis) - IPP Max Planck Institute plasma physics code
-
-### Machine Learning Frameworks for Plasma Physics
-
-- [FRNN (Fusion Recurrent Neural Network)](https://github.com/PPPLDeepLearning/plasma-python) - Deep learning package for tokamak disruption prediction using recurrent neural networks with stateful LSTM training, multi-machine capabilities, and TensorBoard integration (PPPL)
-- [tglfnn-ukaea](https://github.com/ukaea/tglfnn-ukaea) - UKAEA neural network surrogate models of the TGLF quasilinear plasma turbulent transport simulator
-- [VICTOR-GSC2026](https://github.com/vijaideen/VICTOR-GSC2026) [WIP] - Physics-informed neural network notebook for WEST tokamak soft X-ray tomography reconstruction using JAX/Flax
-- [disruption-py](https://github.com/MIT-PSFC/disruption-py) - Physics-based scientific framework for disruption analysis with AI/ML applications supporting multi-tokamak analysis (C-Mod, DIII-D compatibility) (MIT PSFC)
-- [GymTORAX](https://github.com/antoine-mouchamps/gymtorax) - Gymnasium-compliant RL environment wrapping the TORAX plasma simulator for tokamak control, with ready-to-use ITER ramp-up scenario ([paper](https://arxiv.org/abs/2510.11283))
-- [Neural Gyrokinetics](https://github.com/ml-jku/neural-gyrokinetics) - ML tools for accelerating gyrokinetic turbulence simulations including GyroSwin (5D transformer surrogate) and PINC (physics-informed neural compression), with pretrained models on HuggingFace ([GyroSwin](https://arxiv.org/abs/2510.07314), [PINC](https://arxiv.org/abs/2602.04758))
 
 ### Data Platforms, Datasets & Benchmarks
 
