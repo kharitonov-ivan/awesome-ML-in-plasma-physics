@@ -21,7 +21,7 @@ The README has the following structure (preserve this order):
    - Simulation and Modeling Frameworks
    - Machine Learning Frameworks for Plasma Physics
    - Data Platforms, Datasets & Benchmarks
-   - GitHub Discovery and Organizations
+   - Code Discovery and Organizations
 4. Implementation Papers (manually maintained, papers with public code)
 5. Research Papers (auto-generated from bib — **do not edit by hand**)
 6. Contributing
