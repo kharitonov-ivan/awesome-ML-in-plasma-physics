@@ -10,7 +10,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 
 | Section | Description |
 |---------|-------------|
-| [Tools](#tools) | Simulation frameworks, ML toolkits, datasets, orgs |
+| [Tools](#tools) | Simulation frameworks, ML toolkits, datasets, code orgs |
 | [Implementation Papers](#implementation-papers) | Papers with public code |
 | [Research Papers](#research-papers) | Full bibliography (chronological) |
 | [Contributing](#contributing) | How to add entries |
@@ -63,13 +63,14 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [Open Density Limit Database](https://github.com/MIT-PSFC/open_density_limit_database) - MIT PSFC public Alcator C-Mod density-limit dataset with a demo notebook for supervised ML classification
 - [SPARCPublic](https://github.com/cfs-energy/SPARCPublic) - CFS public SPARC baseline physics inputs for common plasma-physics codes, including equilibria and profile files
 
-### GitHub Discovery and Organizations
+### Code Discovery and Organizations
 
 - [ITER Organization GitHub](https://github.com/iterorganization) - Official ITER GitHub organization for IMAS, plasma control, waveform, validation, and fusion-data infrastructure repositories
 - [Proxima Fusion GitHub](https://github.com/proximafusion) - Proxima Fusion's open-source stellarator and fusion tooling; worth checking for new JAX, VMEC, ray-tracing, and optimization projects
 - [UKAEA GitHub](https://github.com/ukaea) - UKAEA open-source fusion software and data repositories, including MAST data infrastructure, STEP scenario releases, and tokamak systems tools
 - [MIT PSFC GitHub](https://github.com/MIT-PSFC) - MIT Plasma Science and Fusion Center repositories for disruption analysis, open datasets, SPARC/Alcator C-Mod tooling, and ML working-group materials
 - [CFS Energy GitHub](https://github.com/cfs-energy) - Commonwealth Fusion Systems public repositories for SPARC physics inputs, POPCON analysis, electromagnetics, and scientific-software utilities
+- [EPFL SPC GitLab](https://gitlab.epfl.ch/spc) - Swiss Plasma Center public repositories including CHEASE equilibrium code, MEQ magnetic equilibrium suite, Tearing Mode Solver, and plasma diagnostics tooling
 - [Nuclear Fusion Open Source projects](https://github.com/kripnerl/fusion-open-source) - Community-maintained discovery list of open-source magnetic-fusion projects
 
 ## Implementation Papers
