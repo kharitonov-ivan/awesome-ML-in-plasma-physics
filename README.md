@@ -42,6 +42,8 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [Neural Gyrokinetics](https://github.com/ml-jku/neural-gyrokinetics) - ML tools for accelerating gyrokinetic turbulence simulations including GyroSwin (5D transformer surrogate) and PINC (physics-informed neural compression), with pretrained models on HuggingFace ([GyroSwin](https://arxiv.org/abs/2510.07314), [PINC](https://arxiv.org/abs/2602.04758))
 - [GymTORAX](https://github.com/antoine-mouchamps/gymtorax) - Gymnasium-compliant RL environment wrapping the TORAX plasma simulator for tokamak control, with ready-to-use ITER ramp-up scenario ([paper](https://arxiv.org/abs/2510.11283))
 - [duqtools](https://github.com/duqtools/duqtools) - IMAS-based dynamic uncertainty quantification for tokamak simulation campaigns
+- [ADEPT](https://github.com/ergodicio/adept) - Automatic-Differentiation-Enabled Plasma Transport code in JAX, enabling differentiable simulation and neural network training pipelines for kinetic and fluid plasma models ([docs](https://adept.readthedocs.io/), [paper](https://syns-ml.github.io/2023/contributions/))
+- [EuroPED-NN](https://github.com/alexpanera/EuroPED-NN) [WIP] - Uncertainty-aware Bayesian neural network surrogate of the EuroPED plasma pedestal model, providing fast inference with epistemic and aleatoric uncertainty estimates ([paper](https://doi.org/10.1088/1361-6587/ad6707))
 
 #### Diagnostics & Atomic Physics
 
@@ -49,6 +51,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [ToFu](https://github.com/ToFuProject/tofu) - IMAS-compatible Python library for synthetic diagnostics, ray tracing, and tomography for fusion devices
 - [radas](https://github.com/cfs-energy/radas) - Simple Python library for fetching and calculating radiated power curves from OpenADAS atomic data (MIT)
 - [VICTOR-GSC2026](https://github.com/vijaideen/VICTOR-GSC2026) [WIP] - Physics-informed neural network notebook for WEST tokamak soft X-ray tomography reconstruction using JAX/Flax
+- [TokEye](https://github.com/PlasmaControl/tokeye) - Open-source Python application for automatic classification and localization of fluctuating signals in fusion plasmas, with pretrained models on HuggingFace and verified on DIII-D diagnostics ([paper](https://arxiv.org/abs/2602.20317))
 
 #### Integrated Frameworks & Design Tools
 
@@ -76,6 +79,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [Open Density Limit Database](https://github.com/MIT-PSFC/open_density_limit_database) - MIT PSFC public Alcator C-Mod density-limit dataset with a demo notebook for supervised ML classification
 - [SPARCPublic](https://github.com/cfs-energy/SPARCPublic) - CFS public SPARC baseline physics inputs for common plasma-physics codes, including equilibria and profile files
 - [UDA](https://github.com/ukaea/UDA) - UKAEA Universal Data Access library providing plugin-driven client-server and offline access to fusion experimental data with Python bindings (Apache-2.0)
+- [TokTagger](https://github.com/ukaea/toktagger) - UKAEA open-source interactive annotation platform for tokamak diagnostic data, enabling curated labeled dataset creation for ML workflows via a web-based UI and Python API (MIT)
 
 ### Code Discovery and Organizations
 
