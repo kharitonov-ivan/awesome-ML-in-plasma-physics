@@ -31,6 +31,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [vmecpp](https://github.com/proximafusion/vmecpp) - C++ implementation of the VMEC stellarator equilibrium code
 - [DESC](https://github.com/PlasmaControl/DESC) - Stellarator equilibrium and optimization suite using pseudo-spectral methods and automatic differentiation
 - [ESSOS](https://github.com/uwplasma/ESSOS) - JAX-based e-stellarator simulation and optimization suite for stellarator coils, plasma boundaries, and magnetic-field equilibria
+- [PLEQUE](https://github.com/kripnerl/pleque) - Python module for interactive visualization and manipulation of tokamak plasma equilibria, compatible with OMAS (MIT)
 
 #### Transport & Turbulence
 
@@ -44,6 +45,8 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [duqtools](https://github.com/duqtools/duqtools) - IMAS-based dynamic uncertainty quantification for tokamak simulation campaigns
 - [ADEPT](https://github.com/ergodicio/adept) - Automatic-Differentiation-Enabled Plasma Transport code in JAX, enabling differentiable simulation and neural network training pipelines for kinetic and fluid plasma models ([docs](https://adept.readthedocs.io/), [paper](https://syns-ml.github.io/2023/contributions/))
 - [EuroPED-NN](https://github.com/alexpanera/EuroPED-NN) [WIP] - Uncertainty-aware Bayesian neural network surrogate of the EuroPED plasma pedestal model, providing fast inference with epistemic and aleatoric uncertainty estimates ([paper](https://doi.org/10.1088/1361-6587/ad6707))
+- [Fusion Surrogates](https://github.com/google-deepmind/fusion_surrogates) - pip-installable library of surrogate transport models (QLKNN) for tokamak fusion, providing model weights and inference code for the TORAX ecosystem (Apache-2.0)
+- [TokaMind](https://github.com/UKAEA-IBM-STFC-Fusion-FMs/tokamind) - Multi-modal transformer foundation model for tokamak plasma dynamics, pretrained on MAST heterogeneous diagnostics with pretrained weights on HuggingFace ([paper](https://arxiv.org/abs/2602.15084), [model](https://huggingface.co/UKAEA-IBM-STFC/tokamind-base-v2))
 
 #### Diagnostics & Atomic Physics
 
@@ -68,6 +71,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [OpenPOPCON](https://github.com/hansec/OpenPOPCON) - Open source Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization
 - [CFS-POPCON](https://github.com/cfs-energy/cfspopcon) - Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization
 - [Travis Code](https://www.ipp.mpg.de/1060709/travis) - IPP Max Planck Institute plasma physics code
+- [Stellarmesh](https://github.com/stellarmesh/stellarmesh) - Meshing library for nuclear workflows supporting tokamak and stellarator DAGMC geometry creation from CAD models with Gmsh and OpenCASCADE backends (MIT)
 
 ### Data Platforms, Datasets & Benchmarks
 
@@ -80,6 +84,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [SPARCPublic](https://github.com/cfs-energy/SPARCPublic) - CFS public SPARC baseline physics inputs for common plasma-physics codes, including equilibria and profile files
 - [UDA](https://github.com/ukaea/UDA) - UKAEA Universal Data Access library providing plugin-driven client-server and offline access to fusion experimental data with Python bindings (Apache-2.0)
 - [TokTagger](https://github.com/ukaea/toktagger) - UKAEA open-source interactive annotation platform for tokamak diagnostic data, enabling curated labeled dataset creation for ML workflows via a web-based UI and Python API (MIT)
+- [TokaMark](https://github.com/UKAEA-IBM-STFC-Fusion-FMs/tokamark) - UKAEA/IBM/STFC comprehensive benchmark suite for MAST tokamak plasma models with 14 heterogeneous reconstruction and forecasting tasks ([paper](https://arxiv.org/abs/2602.10132))
 
 ### Code Discovery and Organizations
 
@@ -90,12 +95,14 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [CFS Energy GitHub](https://github.com/cfs-energy) - Commonwealth Fusion Systems public repositories for SPARC physics inputs, POPCON analysis, electromagnetics, and scientific-software utilities
 - [EPFL SPC GitLab](https://gitlab.epfl.ch/spc) - Swiss Plasma Center public repositories including CHEASE equilibrium code, MEQ magnetic equilibrium suite, Tearing Mode Solver, and plasma diagnostics tooling
 - [Nuclear Fusion Open Source projects](https://github.com/kripnerl/fusion-open-source) - Community-maintained discovery list of open-source magnetic-fusion projects
+- [ORNL Fusion GitHub](https://github.com/ORNL-Fusion) - Oak Ridge National Laboratory fusion software organization, including the Stellarator-Tools umbrella project for stellarator community codes
 
 ## Implementation Papers
 
 Papers with publicly available code implementations:
 
 - **Physics-informed deep learning model for line-integral diagnostics across fusion devices** - *Wang et al. (2025)* - [Paper](https://doi.org/10.1088/1741-4326/ade0ce) | [Code](https://github.com/calledice/onion) - Neural network model for cross-device line-integral diagnostics with physics constraints
+- **TokaMind: A Multi-Modal Transformer Foundation Model for Tokamak Plasma Dynamics** - *Boschi et al. (2026)* - [Paper](https://arxiv.org/abs/2602.15084) | [Code](https://github.com/UKAEA-IBM-STFC-Fusion-FMs/tokamind) | [Model](https://huggingface.co/UKAEA-IBM-STFC/tokamind-base-v2) - First open-source foundation model for tokamak plasma dynamics, pretrained on MAST heterogeneous diagnostics
 
 ## Research Papers
 
