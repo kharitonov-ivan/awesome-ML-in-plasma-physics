@@ -47,6 +47,9 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [EuroPED-NN](https://github.com/alexpanera/EuroPED-NN) [WIP] - Uncertainty-aware Bayesian neural network surrogate of the EuroPED plasma pedestal model, providing fast inference with epistemic and aleatoric uncertainty estimates ([paper](https://doi.org/10.1088/1361-6587/ad6707))
 - [Fusion Surrogates](https://github.com/google-deepmind/fusion_surrogates) - pip-installable library of surrogate transport models (QLKNN) for tokamak fusion, providing model weights and inference code for the TORAX ecosystem (Apache-2.0)
 - [TokaMind](https://github.com/UKAEA-IBM-STFC-Fusion-FMs/tokamind) - Multi-modal transformer foundation model for tokamak plasma dynamics, pretrained on MAST heterogeneous diagnostics with pretrained weights on HuggingFace ([paper](https://arxiv.org/abs/2602.15084), [model](https://huggingface.co/UKAEA-IBM-STFC/tokamind-base-v2))
+- [TurbulentTransport.jl](https://github.com/ProjectTorreyPines/TurbulentTransport.jl) - Julia package running tokamak turbulent-transport models (TGLF, TJLF, QLGYRO) and fast neural-network surrogates (TGLF-NN, GKNN, QLNN, FINN, ModeID-NN) from IMAS data, plugging into FUSE
+- [EPEDNN.jl](https://github.com/ProjectTorreyPines/EPEDNN.jl) - Julia wrapper for the EPEDNN neural-network pedestal pressure-height model, integrated with the FUSE ecosystem
+- [ReMKiT1D](https://github.com/ukaea/ReMKiT1D) - UKAEA framework for 1D multi-fluid and kinetic scrape-off-layer transport simulations with collisional-radiative modelling and a Python interface ([paper](https://www.sciencedirect.com/science/article/pii/S0010465524001188))
 
 #### Diagnostics & Atomic Physics
 
@@ -55,6 +58,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [radas](https://github.com/cfs-energy/radas) - Simple Python library for fetching and calculating radiated power curves from OpenADAS atomic data (MIT)
 - [VICTOR-GSC2026](https://github.com/vijaideen/VICTOR-GSC2026) [WIP] - Physics-informed neural network notebook for WEST tokamak soft X-ray tomography reconstruction using JAX/Flax
 - [TokEye](https://github.com/PlasmaControl/tokeye) - Open-source Python application for automatic classification and localization of fluctuating signals in fusion plasmas, with pretrained models on HuggingFace and verified on DIII-D diagnostics ([paper](https://arxiv.org/abs/2602.20317))
+- [SynthWave](https://github.com/MIT-PSFC/SynthWave) [WIP] - Generates synthetic magnetic (Mirnov) measurements of arbitrary MHD modes with ThinCurr, for training and validating ML diagnostics on C-Mod, DIII-D, and SPARC geometries (MIT PSFC)
 
 #### Integrated Frameworks & Design Tools
 
@@ -72,6 +76,8 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [CFS-POPCON](https://github.com/cfs-energy/cfspopcon) - Plasma Operating CONtour analysis tool for tokamak performance prediction and optimization
 - [Travis Code](https://www.ipp.mpg.de/1060709/travis) - IPP Max Planck Institute plasma physics code
 - [Stellarmesh](https://github.com/stellarmesh/stellarmesh) - Meshing library for nuclear workflows supporting tokamak and stellarator DAGMC geometry creation from CAD models with Gmsh and OpenCASCADE backends (MIT)
+- [POPSIM](https://github.com/MIT-PSFC/POPSIM-Public) - Control-oriented plasma operational simulator in JAX that is JIT-compilable, GPU-parallel, and auto-differentiable, with built-in data and ML pipelines used at TCV (MIT PSFC) ([paper](https://arxiv.org/abs/2509.10244))
+- [FAITH (FusionAIHub)](https://github.com/PlasmaControl/FusionAIHub) [WIP] - Princeton Plasma Control's centralized platform for fusion machine-learning workflows, with multi-GPU training, data pipelines, and foundation-model tooling for DIII-D diagnostics (MIT)
 
 ### Data Platforms, Datasets & Benchmarks
 
@@ -86,6 +92,7 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [UDA](https://github.com/ukaea/UDA) - UKAEA Universal Data Access library providing plugin-driven client-server and offline access to fusion experimental data with Python bindings (Apache-2.0)
 - [TokTagger](https://github.com/ukaea/toktagger) - UKAEA open-source interactive annotation platform for tokamak diagnostic data, enabling curated labeled dataset creation for ML workflows via a web-based UI and Python API (MIT)
 - [TokaMark](https://github.com/UKAEA-IBM-STFC-Fusion-FMs/tokamark) - UKAEA/IBM/STFC comprehensive benchmark suite for MAST tokamak plasma models with 14 heterogeneous reconstruction and forecasting tasks ([paper](https://arxiv.org/abs/2602.10132))
+- [POPSIM-Transport-Predictor](https://github.com/MIT-PSFC/POPSIM-Transport-Predictor) [WIP] - Benchmarking hybrid physics/ML architectures for full-shot tokamak transport prediction across devices, focused on domain adaptation and minimal target-device data (MIT PSFC)
 
 ### Code Discovery and Organizations
 
