@@ -59,6 +59,8 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [VICTOR-GSC2026](https://github.com/vijaideen/VICTOR-GSC2026) [WIP] - Physics-informed neural network notebook for WEST tokamak soft X-ray tomography reconstruction using JAX/Flax
 - [TokEye](https://github.com/PlasmaControl/tokeye) - Open-source Python application for automatic classification and localization of fluctuating signals in fusion plasmas, with pretrained models on HuggingFace and verified on DIII-D diagnostics ([paper](https://arxiv.org/abs/2602.20317))
 - [SynthWave](https://github.com/MIT-PSFC/SynthWave) [WIP] - Generates synthetic magnetic (Mirnov) measurements of arbitrary MHD modes with ThinCurr, for training and validating ML diagnostics on C-Mod, DIII-D, and SPARC geometries (MIT PSFC)
+- [CER Transfer Learning](https://github.com/PlasmaControl/cer_transfer_learning) - Neural reconstruction of ion temperature and toroidal rotation profiles from charge-exchange recombination spectrograms, with transfer learning between DIII-D and NSTX (Princeton Plasma Control)
+- [C-Mod Confinement Prediction](https://github.com/MIT-PSFC/C-Mod-confinement-prediction) - Public inference-only tool that labels Alcator C-Mod time slices by confinement regime (L/H/I-mode) using a pretrained, calibrated ML model (MIT PSFC)
 
 #### Integrated Frameworks & Design Tools
 
@@ -93,6 +95,10 @@ A curated list of awesome machine learning resources for plasma physics, tokamak
 - [TokTagger](https://github.com/ukaea/toktagger) - UKAEA open-source interactive annotation platform for tokamak diagnostic data, enabling curated labeled dataset creation for ML workflows via a web-based UI and Python API (MIT)
 - [TokaMark](https://github.com/UKAEA-IBM-STFC-Fusion-FMs/tokamark) - UKAEA/IBM/STFC comprehensive benchmark suite for MAST tokamak plasma models with 14 heterogeneous reconstruction and forecasting tasks ([paper](https://arxiv.org/abs/2602.10132))
 - [POPSIM-Transport-Predictor](https://github.com/MIT-PSFC/POPSIM-Transport-Predictor) [WIP] - Benchmarking hybrid physics/ML architectures for full-shot tokamak transport prediction across devices, focused on domain adaptation and minimal target-device data (MIT PSFC)
+- [BoSS (Benchmark of Stellarator Simulations)](https://github.com/mishapadidar/boss_bench) - Flatiron Institute dataset of ~180,000 stellarator configurations paired with ideal-MHD and collisionless guiding-center simulation results (~3 TB), with a `boss-bench` Python package and pretrained generative/surrogate baselines ([paper](https://arxiv.org/abs/2610.37910), [dataset](https://boss.flatironinstitute.org/))
+- [StellCoilBench](https://github.com/akaptano/stellcoilbench) - Open benchmark suite for stellarator coil optimization algorithms with standardized case definitions, simsopt-based optimization, and CI-driven leaderboards
+- [CoilStellaration](https://github.com/proximafusion/coilstellaration) - Proxima Fusion code for analyzing and benchmarking stellarator boundaries and coilsets with REGCOIL/DESC-based optimization tracks, built on ConStellaration
+- [transport-validation-datasets](https://github.com/MIT-PSFC/transport-validation-datasets) [WIP] - MIT PSFC methods for generating device-unified datasets to validate transport codes and train hybrid physics/ML models
 
 ### Code Discovery and Organizations
 
@@ -112,6 +118,7 @@ Papers with publicly available code implementations:
 - **Physics-informed deep learning model for line-integral diagnostics across fusion devices** - *Wang et al. (2025)* - [Paper](https://doi.org/10.1088/1741-4326/ade0ce) | [Code](https://github.com/calledice/onion) - Neural network model for cross-device line-integral diagnostics with physics constraints
 - **Experimental validation of a fast control-oriented, physics-informed surrogate model for plasma equilibrium reconstruction in the TCV tokamak** - *Grandin et al. (2026)* - [Paper](https://arxiv.org/abs/2606.09487) | [Code](https://github.com/matgrand/liuqe-nn) - Physics-informed LIUQE surrogate deployed on TCV for sub-100 microsecond inference and 10 kHz shape control
 - **TokaMind: A Multi-Modal Transformer Foundation Model for Tokamak Plasma Dynamics** - *Boschi et al. (2026)* - [Paper](https://arxiv.org/abs/2602.15084) | [Code](https://github.com/UKAEA-IBM-STFC-Fusion-FMs/tokamind) | [Model](https://huggingface.co/UKAEA-IBM-STFC/tokamind-base-v2) - First open-source foundation model for tokamak plasma dynamics, pretrained on MAST heterogeneous diagnostics
+- **NEOPIC: A Neural Operator Framework for Particle-based Kinetic Plasma Simulations** - *Muralikrishnan et al. (2026)* - [Paper](https://arxiv.org/abs/2610.40528) | [Code](https://github.com/NEOPIC-framework/neopic-paper-scripts) - Neural operator that learns the field solve in particle-based kinetic plasma codes, acting directly on the particle measure without meshing or deposition
 
 ## Research Papers
 
